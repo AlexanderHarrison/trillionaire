@@ -22,3 +22,4 @@ unresizable = true
 borderless = true
 always_on_top = true
 popup_window = true
+dialog_autowrap = true
