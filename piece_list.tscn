@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://dv7xqiy3lh8db"]
+[gd_scene load_steps=2 format=3 uid="uid://dv7xqiy3lh8db"]
+
+[ext_resource type="PackedScene" uid="uid://dbe0nr46vkpjb" path="res://piece_button.tscn" id="1_k4c1u"]
 
 [node name="piece_list" type="ScrollContainer"]
+offset_right = 664.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Container" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+
+[node name="Container2" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
