@@ -3,3 +3,5 @@ res://popup_dialog.gd
 res://piece_button.tscn
 res://piece_button.gd
 res://test.gd
+res://piece_list.tscn
+res://piece.tscn

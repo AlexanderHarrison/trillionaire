@@ -6,12 +6,16 @@
 
 [node name="hour" parent="." instance=ExtResource("1_sadfj")]
 layout_mode = 2
+mouse_filter = 1
 
 [node name="hour2" parent="." instance=ExtResource("1_sadfj")]
 layout_mode = 2
+mouse_filter = 1
 
 [node name="hour3" parent="." instance=ExtResource("1_sadfj")]
 layout_mode = 2
+mouse_filter = 1
 
 [node name="hour4" parent="." instance=ExtResource("1_sadfj")]
 layout_mode = 2
+mouse_filter = 1

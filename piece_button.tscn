@@ -8,6 +8,7 @@ offset_right = 504.0
 offset_bottom = 252.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 0
 script = ExtResource("1_36sim")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -17,6 +18,7 @@ layout_mode = 2
 clip_contents = false
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
+mouse_filter = 1
 theme_override_font_sizes/normal_font_size = 37
 text = "TEMP TEXT
 "
@@ -27,3 +29,7 @@ layout_mode = 2
 
 [node name="piece" parent="BoxContainer" instance=ExtResource("2_lqdme")]
 layout_mode = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
