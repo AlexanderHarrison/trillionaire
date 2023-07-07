@@ -18,9 +18,7 @@ offset_bottom = 1283.0
 scale = Vector2(0.5, 0.5)
 
 [node name="popup_dialog" parent="." instance=ExtResource("4_d3465")]
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
+offset_left = 575.0
+offset_top = 325.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
