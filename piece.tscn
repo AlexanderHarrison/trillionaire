@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c82kbejlao12d"]
+
+[ext_resource type="PackedScene" uid="uid://djp5j18pjssb6" path="res://hour.tscn" id="1_sadfj"]
+
+[node name="piece" type="GridContainer"]
+
+[node name="hour" parent="." instance=ExtResource("1_sadfj")]
+layout_mode = 2
+
+[node name="hour2" parent="." instance=ExtResource("1_sadfj")]
+layout_mode = 2
+
+[node name="hour3" parent="." instance=ExtResource("1_sadfj")]
+layout_mode = 2
+
+[node name="hour4" parent="." instance=ExtResource("1_sadfj")]
+layout_mode = 2

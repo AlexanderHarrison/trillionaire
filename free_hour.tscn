@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b6eno0c6fhadl"]
+
+[node name="GridSpot" type="ColorRect"]
+custom_minimum_size = Vector2(100, 60)
+color = Color(1, 1, 1, 0)
