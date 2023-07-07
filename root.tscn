@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=6 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
 [ext_resource type="Script" path="res://test.gd" id="2_5moyt"]
 [ext_resource type="PackedScene" uid="uid://dv7xqiy3lh8db" path="res://piece_list.tscn" id="2_e1pnw"]
-[ext_resource type="PackedScene" path="res://cursor_piece.tscn" id="5_fn06i"]
+[ext_resource type="PackedScene" uid="uid://xqlybam2u73e" path="res://popup_dialog.tscn" id="4_d3465"]
+[ext_resource type="PackedScene" uid="uid://cqi8h3idr3n0o" path="res://cursor_piece.tscn" id="5_fn06i"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("2_5moyt")
@@ -16,5 +17,13 @@ offset_top = 5.0
 offset_right = 1489.0
 offset_bottom = 1283.0
 scale = Vector2(0.5, 0.5)
+
+[node name="popup_dialog" parent="." instance=ExtResource("4_d3465")]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="cursor_piece" parent="." instance=ExtResource("5_fn06i")]
