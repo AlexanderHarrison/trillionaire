@@ -1,7 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=3 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
+[ext_resource type="Script" path="res://test.gd" id="2_5moyt"]
 
 [node name="root" type="Node2D"]
+script = ExtResource("2_5moyt")
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]

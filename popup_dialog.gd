@@ -1,0 +1,14 @@
+extends AcceptDialog
+
+func _init(text: String):
+	self.set_text(text)
+	self.visible = true
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
