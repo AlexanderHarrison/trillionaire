@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbe0nr46vkpjb"]
+
+[ext_resource type="Script" path="res://piece_button.gd" id="1_36sim"]
+[ext_resource type="PackedScene" uid="uid://c82kbejlao12d" path="res://piece.tscn" id="2_lqdme"]
+
+[node name="Container" type="HBoxContainer"]
+offset_right = 504.0
+offset_bottom = 252.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_36sim")
+piece_name = null
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer"]
+clip_contents = false
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 37
+text = "TEMP TEXT
+"
+fit_content = true
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 2
+
+[node name="piece" parent="BoxContainer" instance=ExtResource("2_lqdme")]
+layout_mode = 2
