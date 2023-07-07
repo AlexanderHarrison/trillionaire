@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7ydvhu6dysqm"]
 
-[ext_resource type="PackedScene" uid="uid://djp5j18pjssb6" path="res://hour.tscn" id="1_bwcgp"]
+[ext_resource type="PackedScene" uid="uid://b6eno0c6fhadl" path="res://free_hour.tscn" id="1_u2jjd"]
 
 [node name="schedule" type="GridContainer"]
 offset_top = 259.0
@@ -8,92 +8,92 @@ offset_right = 544.0
 offset_bottom = 646.0
 columns = 5
 
-[node name="hour" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour2" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free2" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour3" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free3" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour4" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free4" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour5" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free5" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour6" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free6" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour7" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free7" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour8" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free8" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour9" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free9" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour10" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free10" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour11" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free11" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour12" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free12" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour13" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free13" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour14" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free14" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour15" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free15" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour16" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free16" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour17" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free17" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour18" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free18" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour19" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free19" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour20" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free20" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour21" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free21" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour22" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free22" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour23" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free23" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour24" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free24" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour25" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free25" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour26" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free26" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour27" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free27" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour28" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free28" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour29" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free29" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 
-[node name="hour30" parent="." instance=ExtResource("1_bwcgp")]
+[node name="free30" parent="." instance=ExtResource("1_u2jjd")]
 layout_mode = 2
