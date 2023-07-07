@@ -1,8 +1,9 @@
-extends AcceptDialog
+extends Control
+
 
 func init(text: String):
-	self.set_text(text)
-	self.visible = true
+	$AcceptDialog.set_text(text)
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
