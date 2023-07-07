@@ -1,4 +1,5 @@
 res://root.tscn
-res://popup_dialog.tscn
-res://test.gd
 res://popup_dialog.gd
+res://piece_button.tscn
+res://piece_button.gd
+res://test.gd

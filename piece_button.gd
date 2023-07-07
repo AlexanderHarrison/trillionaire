@@ -4,4 +4,4 @@ extends Container
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$ConterContainer.$RichTextLabel.set_text(piece_name);
+	$CenterContainer/RichTextLabel.set_text(piece_name);
