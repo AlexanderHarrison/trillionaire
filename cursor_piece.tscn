@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqi8h3idr3n0o"]
+
+[ext_resource type="Script" path="res://cursor_piece.gd" id="1_awdxo"]
+[ext_resource type="PackedScene" uid="uid://c82kbejlao12d" path="res://piece.tscn" id="1_ldkfe"]
+
+[node name="cursor_piece" type="Node2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_awdxo")
+
+[node name="piece" parent="." instance=ExtResource("1_ldkfe")]
+offset_right = 100.0
+offset_bottom = 252.0
