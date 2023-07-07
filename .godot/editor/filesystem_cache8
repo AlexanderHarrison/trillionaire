@@ -1,10 +1,11 @@
 2a60927148abd1d33b818b535e306557
-::res://::1688756371
+::res://::1688763365
 free_hour.tscn::PackedScene::-1::1688756144::0::1::::<><>::
 hour.tscn::PackedScene::7823766309340565449::1688755929::0::1::::<><>::
 icon.svg::CompressedTexture2D::7066689353684708718::1688755929::1688755942::1::::<><>::
-accept_dialog.tscn::PackedScene::4528411017677635627::1688756122::0::1::::<><>::
 piece.tscn::PackedScene::-1::1688756144::0::1::::<><>::
-root.tscn::PackedScene::4476632734358370882::1688755929::0::1::::<><>::uid://b7ydvhu6dysqm
+popup_dialog.gd::GDScript::-1::1688759976::0::1::::<>AcceptDialog<>::
+popup_dialog.tscn::PackedScene::7941896533574768124::1688759976::0::1::::<><>::res://popup_dialog.gd
+root.tscn::PackedScene::4476632734358370882::1688759906::0::1::::<><>::uid://b7ydvhu6dysqm<>res://test.gd
 schedule.tscn::PackedScene::4682228798830885316::1688755929::0::1::::<><>::uid://djp5j18pjssb6
-::res://accept_dialog/::1688756371
+test.gd::GDScript::-1::1688759904::0::1::::<>Node<>::

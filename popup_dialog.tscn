@@ -4,7 +4,6 @@
 
 [node name="popup_dialog" type="AcceptDialog"]
 title = ""
-visible = true
 unresizable = true
 borderless = true
 always_on_top = true

@@ -1,6 +1,6 @@
 extends AcceptDialog
 
-func _init(text: String):
+func init(text: String):
 	self.set_text(text)
 	self.visible = true
 
