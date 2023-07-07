@@ -20,6 +20,7 @@ script = ExtResource("1_ctf5e")
 
 [node name="AcceptDialog" type="AcceptDialog" parent="."]
 title = ""
+position = Vector2i(544, 274)
 exclusive = false
 unresizable = true
 borderless = true
