@@ -1,5 +1,9 @@
-res://accept_dialog.tscn
-res://popup_dialog.tscn
-res://popup_dialog.gd
 res://root.tscn
+res://piece_button.gd
+res://schedule.tscn
+res://hour.tscn
+res://piece.tscn
+res://free_hour.tscn
+res://piece_list.tscn
+res://piece_button.tscn
 res://test.gd
