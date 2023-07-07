@@ -1,6 +1,6 @@
-extends AcceptDialog
+extends CenterContainer
 
 
 func init(text: String):
-	set_text(text)
-	visible = true
+	$AcceptDialog.set_text(text)
+	$AcceptDialog.visible = true
