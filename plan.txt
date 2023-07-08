@@ -1,0 +1,80 @@
+Entities:
+
+- Stock
+  - Randomly increases or decreases in value daily
+  - Type and magnitude of changed biased based on random seed
+
+- Cryptocurrency
+  - Same as stock but more volatile changes
+
+- Portfolio
+  - Gives or takes the sum of the changes in value to all owned stocks and crypto daily
+
+- Item
+  - Can give or take some amount of money at some times
+
+- Company
+  - Has weekly spending, weekly earnings, weekly profit, employee count
+  - Has shareholders that restrict excessive change to profit
+
+
+Choices:
+
+- Purchase Item [0]
+  - Deduct some amount of money
+  - Receive some item
+
+- Buy Stock [0]
+  - Choose a stock to add to your portfolio from a list of three
+
+- Sell Stock [0]
+  - Choose a stock from your portfolio to sell
+
+- Venture Capital Funding [1]
+  - Choose a startup to fund from a list of three
+  - Has a low chance of small profit and an extremely low chance of large profit
+
+- Increase Wages [0]
+  - Increase company spending by some amount
+  - Affects shareholders' actions
+
+- Charitable Donation [0]
+  - Deduct some amount of money
+  - Large percentage of amount abducted is earned back in four weeks
+
+- Political Donation [2]
+  - Deduct some amount of money
+  - Chance for company spending to decrease after some amount of time
+
+- Gamble [2]
+  - Deduct some amount of money
+  - Extremely small chance to receive a multiple of the amount deducted
+
+- Lawsuit [2]
+  - Deduct some amount of money weekly for some amount of weeks
+  - Restricts schedule space
+
+- Buy Crypto [3]
+  - Choose a cryptocurrency to add to your portfolio from a list of three
+
+- Travel [1]
+  - Deduct some amount of money
+
+- Expand Company [1]
+  - Deduct some amount of money
+  - Company spending and earning both increase by some amount independently
+
+
+Events:
+
+- Paycheck
+  - Occurs every week
+  - Receive some amount of money depending on company profit
+
+- Stock Returns
+  - Occurs daily
+  - Receive or deduct some amount of money depending on the sum of the changes to your portfolio's value
+
+- Stock Market Crash
+  - Occurs randomly
+  - Value of all stocks and/or cryptocurrencies decrease sharply
