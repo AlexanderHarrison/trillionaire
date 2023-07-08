@@ -78,3 +78,17 @@ arr = Array[bool]([true, true, true, false])
 width = 2
 color = Color(0.454902, 0.662745, 0.890196, 1)
 money_loss = 1124
+
+[node name="piece6" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Piece 6"
+arr = Array[bool]([true, true, true, true, false, true])
+width = 3
+color = Color(0.321569, 0.792157, 0, 1)
+money_loss = 3132
+research_level = 1
+
+[node name="Container" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+is_buy_asset = true
+asset_node_name = "car"

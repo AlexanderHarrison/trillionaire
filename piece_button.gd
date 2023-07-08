@@ -7,6 +7,8 @@ extends Container
 @export var money_loss: int;
 @export var research_level: int;
 @export var research_gain: int;
+@export var is_buy_asset: bool;
+@export var asset_node_name: String;
 
 var mouseover = false;
 var cursorpiece
@@ -19,7 +21,9 @@ func _ready():
 		color, 
 		money_loss, 
 		research_level,
-		research_gain
+		research_gain,
+		is_buy_asset,
+		asset_node_name
 	)
 	$CenterContainer/RichTextLabel.set_text(piece_name);
 	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
