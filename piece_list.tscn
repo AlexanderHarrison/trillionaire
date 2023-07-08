@@ -1,20 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dv7xqiy3lh8db"]
+[gd_scene load_steps=5 format=3 uid="uid://dv7xqiy3lh8db"]
 
 [ext_resource type="Script" path="res://piece_list.gd" id="1_24k6r"]
 [ext_resource type="PackedScene" uid="uid://dbe0nr46vkpjb" path="res://piece_button.tscn" id="1_k4c1u"]
+[ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="2_lavli"]
 [ext_resource type="Script" path="res://research_label.gd" id="2_oa6ta"]
 
-[node name="piece_list" type="ScrollContainer"]
-offset_right = 664.0
-offset_bottom = 648.0
-script = ExtResource("1_24k6r")
+[node name="Control" type="VBoxContainer"]
+offset_right = 595.0
+offset_bottom = 1083.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
 [node name="research_label" type="RichTextLabel" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 110)
 layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_lavli")
 theme_override_font_sizes/normal_font_size = 37
 text = "adasdas"
 script = ExtResource("2_oa6ta")
@@ -29,60 +31,66 @@ custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 color = Color(1, 1, 1, 0)
 
-[node name="piece_research" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+[node name="piece_list" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(0, 850)
 layout_mode = 2
-piece_name = "RESEARCH MONEY LOSS"
+script = ExtResource("1_24k6r")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="piece_list"]
+layout_mode = 2
+
+[node name="piece_research" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "RESEARCH
+MONEY LOSS"
 arr = Array[bool]([true, true])
 width = 2
-color = Color(1, 1, 1, 1)
+color = Color(0.8, 0.8, 0.8, 1)
+money_loss = -1200
 research_gain = 1
 
-[node name="piece1" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+[node name="piece6" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
 layout_mode = 2
-piece_name = "Piece 1"
-arr = Array[bool]([true, true, true, true])
-width = 1
-color = Color(0, 0.647059, 1, 1)
-money_loss = 987
+arr = Array[bool]([true, true, true, false, false, false, true, true])
+width = 4
+color = Color(0.6, 0.8, 0.6, 1)
+money_loss = 123000
+research_level = 100
 
-[node name="piece2" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+[node name="piece5" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
 layout_mode = 2
-piece_name = "Piece 2"
+arr = Array[bool]([true, false, true, false, true])
+width = 5
+color = Color(0.8, 0.6, 0.8, 1)
+money_loss = 56000
+research_level = 50
+
+[node name="piece4" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+arr = Array[bool]([true, true, true, false, false, false, true, false])
+width = 2
+color = Color(1, 0.8, 0.4, 1)
+money_loss = 25153
+research_level = 30
+
+[node name="piece3" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+arr = Array[bool]([true, true, false, false, true, true])
+width = 3
+color = Color(0.976471, 0.568627, 0.341176, 1)
+money_loss = 5384
+research_level = 10
+
+[node name="piece2" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
 arr = Array[bool]([true, false, false, true, true, true])
 width = 3
-color = Color(0.788235, 0, 0, 1)
-money_loss = 2144
+color = Color(0.94902, 0.466667, 0.478431, 1)
+money_loss = 2351
 
-[node name="piece3" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+[node name="piece1" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
 layout_mode = 2
-piece_name = "Piece 3"
-arr = Array[bool]([true, false, true, true, false, true])
-width = 3
-color = Color(0.592157, 0.00392157, 0.85098, 1)
-money_loss = 4123
-research_level = 5
-
-[node name="piece4" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-piece_name = "Piece 4"
 arr = Array[bool]([true, true, true, true])
-width = 2
-color = Color(1, 1, 0, 1)
-money_loss = 1665
-
-[node name="piece5" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-piece_name = "Piece 5"
-arr = Array[bool]([true, true, true, false])
-width = 2
-color = Color(0.454902, 0.662745, 0.890196, 1)
-money_loss = 1124
-
-[node name="piece6" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-piece_name = "Piece 6"
-arr = Array[bool]([true, true, true, true, false, true])
-width = 3
-color = Color(0.321569, 0.792157, 0, 1)
-money_loss = 3132
-research_level = 1
+width = 1
+color = Color(0.4, 0.6, 0.8, 1)
+money_loss = 1111

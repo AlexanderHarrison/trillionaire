@@ -3,41 +3,52 @@
 [ext_resource type="Script" path="res://piece_button.gd" id="1_36sim"]
 [ext_resource type="PackedScene" uid="uid://c82kbejlao12d" path="res://piece.tscn" id="2_lqdme"]
 
-[node name="Container" type="HBoxContainer"]
-offset_right = 504.0
+[node name="Container" type="MarginContainer"]
+offset_right = 556.0
 offset_bottom = 252.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 0
+theme_override_constants/margin_top = 17
 script = ExtResource("1_36sim")
-
-[node name="CenterContainer" type="VBoxContainer" parent="."]
-layout_mode = 2
-
-[node name="name" type="RichTextLabel" parent="CenterContainer"]
-clip_contents = false
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-mouse_filter = 1
-theme_override_font_sizes/normal_font_size = 37
-text = "TEMP TEXT
-"
-fit_content = true
-
-[node name="effect" type="RichTextLabel" parent="CenterContainer"]
-clip_contents = false
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-mouse_filter = 1
-theme_override_font_sizes/normal_font_size = 24
-text = "EFFECT
-"
-fit_content = true
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 2
 
-[node name="piece" parent="BoxContainer" instance=ExtResource("2_lqdme")]
+[node name="CenterContainer" type="CenterContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="name" type="Label" parent="BoxContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "TEMP TEXT 
+askdh
+ ajsda shdkajj
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="effect" type="Label" parent="BoxContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+mouse_filter = 1
+text = "EFFECT
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer2" type="CenterContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="piece" parent="BoxContainer/CenterContainer2" instance=ExtResource("2_lqdme")]
 layout_mode = 2
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

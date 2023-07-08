@@ -9,4 +9,4 @@ func _process(_delta):
 
 func add_research(res):
 	research += res
-	get_parent().get_parent().check_research(research)
+	get_parent().get_parent().get_node("piece_list").check_research(research)
