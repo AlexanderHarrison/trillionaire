@@ -34,10 +34,11 @@ func update_date(newdate, month, _year):
 	if month != old_month:
 		old_month = month
 		if (idx + date_counter) % 7 == 0:
-			set_color(new_week_color)
+			reset_color = new_week_color
 		else:
-			set_color(default_color)
-		reset_color = color
+			reset_color = default_color
+		if get_color() == new_week_color or get_color() == default_color:
+			set_color(reset_color)
 
 func set_full(new_color):
 	set_color(new_color)

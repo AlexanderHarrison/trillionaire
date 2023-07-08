@@ -62,3 +62,11 @@ width = 3
 color = Color(0.592157, 0.00392157, 0.85098, 1)
 money_loss = 4123
 research_level = 5
+
+[node name="piece4" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Piece 4"
+arr = Array[bool]([true, true, true, true])
+width = 2
+color = Color(1, 1, 0, 1)
+money_loss = 1665
