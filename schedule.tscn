@@ -16,6 +16,7 @@ columns = 5
 [node name="Label" type="Label" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/font = ExtResource("1_6qadv")
 theme_override_font_sizes/font_size = 26
 text = "Monday"
@@ -25,6 +26,7 @@ vertical_alignment = 1
 [node name="Label2" type="Label" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/font = ExtResource("1_6qadv")
 theme_override_font_sizes/font_size = 26
 text = "Tuesday
@@ -34,6 +36,7 @@ horizontal_alignment = 1
 [node name="Label3" type="Label" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/font = ExtResource("1_6qadv")
 theme_override_font_sizes/font_size = 26
 text = "Wednesday"
@@ -42,6 +45,7 @@ horizontal_alignment = 1
 [node name="Label4" type="Label" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/font = ExtResource("1_6qadv")
 theme_override_font_sizes/font_size = 26
 text = "Thursday"
@@ -50,6 +54,7 @@ horizontal_alignment = 1
 [node name="Label5" type="Label" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/font = ExtResource("1_6qadv")
 theme_override_font_sizes/font_size = 26
 text = "Friday"

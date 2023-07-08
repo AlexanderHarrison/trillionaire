@@ -1,4 +1,4 @@
-extends RichTextLabel
+extends Label
 
 var research: int = 0;
 
