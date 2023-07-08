@@ -1,15 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=4 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
-[ext_resource type="Script" path="res://test.gd" id="2_5moyt"]
 [ext_resource type="PackedScene" uid="uid://dv7xqiy3lh8db" path="res://piece_list.tscn" id="2_e1pnw"]
 [ext_resource type="PackedScene" uid="uid://cqi8h3idr3n0o" path="res://cursor_piece.tscn" id="5_fn06i"]
-[ext_resource type="Script" path="res://popup_dialog.gd" id="5_vsdwl"]
 
 [node name="root" type="Node2D"]
-script = ExtResource("2_5moyt")
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
+offset_left = 7.0
+offset_right = 551.0
 
 [node name="piece_list" parent="." instance=ExtResource("2_e1pnw")]
 offset_left = 825.0
@@ -20,10 +19,3 @@ scale = Vector2(0.5, 0.5)
 
 [node name="cursor_piece" parent="." instance=ExtResource("5_fn06i")]
 visible = false
-
-[node name="popup_dialog" type="AcceptDialog" parent="."]
-title = ""
-position = Vector2i(532, 225)
-size = Vector2i(105, 100)
-dialog_text = "asdasdasds"
-script = ExtResource("5_vsdwl")
