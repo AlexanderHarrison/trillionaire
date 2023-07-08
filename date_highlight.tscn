@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://car1npdmnoi1c"]
+
+[node name="GridSpot" type="ColorRect"]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 104.0
+offset_bottom = 60.0
+color = Color(1, 1, 0.517647, 1)
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

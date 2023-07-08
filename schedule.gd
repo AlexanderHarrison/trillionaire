@@ -93,7 +93,6 @@ func add_arrangement(idx, piece):
 	var here_x: int = idx % 5
 	var here_y: int = floori(idx / 5)
 	
-	var new_arr_idx = arrangements.size()
 	arrangements.append(arrangement)
 	for y in arrangement.size():
 		for x in arrangement[0].size():

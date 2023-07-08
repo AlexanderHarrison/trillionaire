@@ -1,14 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=6 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
 [ext_resource type="PackedScene" uid="uid://dv7xqiy3lh8db" path="res://piece_list.tscn" id="2_e1pnw"]
+[ext_resource type="PackedScene" uid="uid://dnc0yucatedji" path="res://money.tscn" id="4_jjj0s"]
+[ext_resource type="Script" path="res://date.gd" id="5_30x5y"]
 [ext_resource type="PackedScene" uid="uid://cqi8h3idr3n0o" path="res://cursor_piece.tscn" id="5_fn06i"]
 
 [node name="root" type="Node2D"]
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
-offset_left = 7.0
-offset_right = 551.0
+offset_left = 284.0
+offset_top = 255.0
+offset_right = 828.0
+offset_bottom = 642.0
 
 [node name="piece_list" parent="." instance=ExtResource("2_e1pnw")]
 offset_left = 825.0
@@ -19,3 +23,19 @@ scale = Vector2(0.5, 0.5)
 
 [node name="cursor_piece" parent="." instance=ExtResource("5_fn06i")]
 visible = false
+
+[node name="money" parent="." instance=ExtResource("4_jjj0s")]
+offset_left = 11.0
+offset_top = 2.0
+offset_right = 817.0
+offset_bottom = 102.0
+money = 999999999999
+
+[node name="date" parent="." instance=ExtResource("4_jjj0s")]
+offset_left = 23.0
+offset_top = 75.0
+offset_right = 829.0
+offset_bottom = 175.0
+theme_override_font_sizes/normal_font_size = 30
+script = ExtResource("5_30x5y")
+date_change_time = 1.0
