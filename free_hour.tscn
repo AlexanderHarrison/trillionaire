@@ -8,7 +8,9 @@ color = Color(0.317647, 0.317647, 0.317647, 1)
 script = ExtResource("1_88i0o")
 
 [node name="gd" type="ColorRect" parent="."]
+visible = false
 z_index = -1
+layout_mode = 0
 offset_top = 85.0
 offset_right = 150.0
 offset_bottom = 133.0
@@ -17,6 +19,7 @@ mouse_filter = 2
 [node name="clr" type="ColorRect" parent="."]
 visible = false
 z_index = 1
+layout_mode = 0
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 145.0
@@ -24,6 +27,7 @@ offset_bottom = 85.0
 mouse_filter = 2
 
 [node name="gr" type="ColorRect" parent="."]
+visible = false
 z_index = -1
 layout_mode = 0
 offset_left = 145.0

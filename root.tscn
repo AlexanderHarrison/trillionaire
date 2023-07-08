@@ -12,6 +12,12 @@
 
 [node name="root" type="Node2D"]
 
+[node name="mouse_catcher" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1916.0
+offset_bottom = 1080.0
+
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
 offset_left = 444.0
 offset_top = 474.0
@@ -32,6 +38,7 @@ offset_left = 56.0
 offset_top = 59.0
 offset_right = 1302.0
 offset_bottom = 258.0
+mouse_filter = 2
 theme = SubResource("Theme_edryn")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_tbhhc")
@@ -44,6 +51,7 @@ offset_left = 56.0
 offset_top = 183.0
 offset_right = 862.0
 offset_bottom = 283.0
+mouse_filter = 2
 theme = SubResource("Theme_edryn")
 theme_override_colors/default_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/normal_font = ExtResource("5_tbhhc")
@@ -53,3 +61,5 @@ script = ExtResource("5_30x5y")
 date_change_time = 1.0
 
 [node name="background" parent="." instance=ExtResource("7_1ury8")]
+
+[connection signal="gui_input" from="mouse_catcher" to="cursor_piece" method="_on_mouse_catcher_gui_input"]
