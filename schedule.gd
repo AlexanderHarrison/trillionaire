@@ -46,6 +46,7 @@ var hour_nodes = [
 
 var date
 var money
+var research
 
 func _ready():
 	var root = get_tree().root.get_child(0)
@@ -53,6 +54,7 @@ func _ready():
 	money = root.get_node("money")
 	date.call_on_date_update(self)
 	cursorpiece = root.get_node("cursor_piece")
+	research = root.get_node("piece_list/VBoxContainer/research_label")
 
 func update_date(newdate, _month, _year):
 	var x = newdate % 5
@@ -65,6 +67,9 @@ func update_date(newdate, _month, _year):
 	if calendar[y][x]:
 		var loss = data[y][x][0]
 		money.remove_money(loss)
+		var res = data[y][x][1]
+		if res > 0:
+			research.add_research(res)
 	
 
 func add_child_hour(hour):
@@ -79,7 +84,7 @@ func box_click(idx):
 			add_arrangement(idx, piece)
 		else:
 			pass
-		cursorpiece.clear_cursor()
+		#cursorpiece.clear_cursor()
 		
 func box_click_r(idx):
 	var x = idx % width
@@ -92,7 +97,7 @@ func box_click_r(idx):
 					calendar[cy][cx] = false
 					var node = hour_nodes[cy][cx]
 					node.clear()
-	cursorpiece.clear_cursor()
+	#cursorpiece.clear_cursor()
 
 func valid_arrangement(idx, arrangement):
 	var here_x: int = idx % 5
@@ -121,7 +126,7 @@ func add_arrangement(idx, piece):
 			if arrangement[y][x]:
 				calendar[here_y+y][here_x+x] = true
 				pieces[here_y+y][here_x+x] = piece_idx
-				data[here_y+y][here_x+x] = [piece.money_loss]
+				data[here_y+y][here_x+x] = [piece.money_loss, piece.research_gain]
 				var node = hour_nodes[here_y+y][here_x+x]
 				node.set_full(color)
 	piece_idx += 1

@@ -5,13 +5,22 @@ extends Container
 @export var width: int;
 @export var color: Color;
 @export var money_loss: int;
+@export var research_level: int;
+@export var research_gain: int;
 
 var mouseover = false;
 var cursorpiece
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$BoxContainer/piece.update_arr(arr, width, color, money_loss)
+	$BoxContainer/piece.update_arr(
+		arr, 
+		width, 
+		color, 
+		money_loss, 
+		research_level,
+		research_gain
+	)
 	$CenterContainer/RichTextLabel.set_text(piece_name);
 	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
 
