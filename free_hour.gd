@@ -21,3 +21,4 @@ func _on_gui_input(event):
 		and event.is_pressed() \
 		and mouseover:
 		parent.box_click(idx)
+		
