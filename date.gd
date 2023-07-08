@@ -12,6 +12,8 @@ const months = [
 	"July", "August", "September", "October", "November", "December"
 ]
 
+var date_update_objects = []
+
 func _ready():
 	text = format_date()
 
@@ -21,13 +23,18 @@ func _process(delta):
 		date_timer = fmod(date_timer, date_change_time)
 		date += 1	
 		if date == 30:
-			date == 0
+			date = 0
 			month += 1
 			if month == 12:
 				month = 0
 				year += 1
 				
 		text = format_date()
+		for obj in date_update_objects:
+			obj.update_date(date, month, year)
+
+func call_on_date_update(obj):
+	date_update_objects.append(obj)
 
 func format_date():
 	return "%s %d, %d" % [months[month], date+1, year]

@@ -14,13 +14,6 @@ var calendar = [
 ];
 
 var pieces = [
-	#[null, null, null, null, null], 
-	#[null, null, null, null, null], 
-	#[null, null, null, null, null], 
-	#[null, null, null, null, null], 
-	#[null, null, null, null, null],
-	#[null, null, null, null, null]
-	
 	[0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0],
@@ -42,8 +35,20 @@ var hour_nodes = [
 	[null, null, null, null, null]
 ]
 
+var date
+
 func _ready():
-	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
+	var root = get_tree().root.get_child(0)
+	date = root.get_node("date")
+	date.call_on_date_update(self)
+	cursorpiece = root.get_node("cursor_piece")
+
+func update_date(newdate, _month, _year):
+	for row in hour_nodes:
+		for n in row:
+			n.clear_highlight()
+	
+	hour_nodes[floori(newdate as float / 5)][newdate % 5].highlight()
 
 func add_child_hour(hour):
 	var here_x: int = hour.idx % 5

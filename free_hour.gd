@@ -5,8 +5,14 @@ var parent;
 var default_color
 @export var idx: int;
 
+var highlight_node = preload("res://date_highlight.tscn")
+var highlight_obj
+
 func _ready():
 	default_color = color
+	highlight_obj = highlight_node.instantiate()
+	add_child(highlight_obj)
+	clear_highlight()
 	parent = get_parent()
 	if parent.add_child_hour != null:
 		parent.add_child_hour(self);
@@ -16,6 +22,12 @@ func set_full(new_color):
 
 func clear():
 	color = default_color
+	
+func clear_highlight():
+	highlight_obj.visible = false
+
+func highlight():
+	highlight_obj.visible = true
 	
 func _on_mouse_entered():
 	mouseover = true

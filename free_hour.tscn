@@ -4,7 +4,7 @@
 
 [node name="GridSpot" type="ColorRect"]
 custom_minimum_size = Vector2(100, 60)
-color = Color(1, 1, 1, 0.282353)
+color = Color(0.521569, 0.521569, 0.521569, 1)
 script = ExtResource("1_88i0o")
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
