@@ -33,6 +33,7 @@ func _ready():
 	#new_week_color = color + Color(0.125, 0.125, 0.125, 0.0)
 	update_date(0, 0, 2030)
 	highlight_obj.visible = false
+	clear()
 	if idx == 0:
 		highlight()
 	else:
