@@ -120,13 +120,20 @@ func add_arrangement(idx, piece):
 	var here_x: int = idx % 5
 	var here_y: int = floori(idx / 5)
 	
+	var p_height = arrangement.size()
+	var p_width = arrangement[0].size()
+	
 	arrangements.append(arrangement)
-	for y in arrangement.size():
-		for x in arrangement[0].size():
+	for y in p_height:
+		for x in p_width:
 			if arrangement[y][x]:
 				calendar[here_y+y][here_x+x] = true
 				pieces[here_y+y][here_x+x] = piece_idx
 				data[here_y+y][here_x+x] = [piece.money_loss, piece.research_gain]
 				var node = hour_nodes[here_y+y][here_x+x]
-				node.set_full(color)
+			
+				var g_d = y < p_height-1 and arrangement[y+1][x]
+				var g_r = x < p_width-1 and arrangement[y][x+1]
+				
+				node.set_full(color, [g_d, g_r])
 	piece_idx += 1

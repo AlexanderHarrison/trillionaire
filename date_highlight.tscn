@@ -2,14 +2,10 @@
 
 [node name="GridSpot" type="ColorRect"]
 z_index = -1
-custom_minimum_size = Vector2(100, 60)
+custom_minimum_size = Vector2(156, 96)
 offset_left = -3.0
 offset_top = -3.0
-offset_right = 103.0
-offset_bottom = 63.0
+offset_right = 153.0
+offset_bottom = 93.0
 mouse_filter = 2
 color = Color(1, 1, 0.517647, 1)
-
-[connection signal="gui_input" from="." to="." method="_on_gui_input"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

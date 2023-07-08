@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=8 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
 [ext_resource type="PackedScene" uid="uid://dv7xqiy3lh8db" path="res://piece_list.tscn" id="2_e1pnw"]
 [ext_resource type="PackedScene" uid="uid://dnc0yucatedji" path="res://money.tscn" id="4_jjj0s"]
 [ext_resource type="Script" path="res://date.gd" id="5_30x5y"]
 [ext_resource type="PackedScene" uid="uid://cqi8h3idr3n0o" path="res://cursor_piece.tscn" id="5_fn06i"]
+[ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="5_tbhhc"]
+
+[sub_resource type="Theme" id="Theme_edryn"]
 
 [node name="root" type="Node2D"]
 
@@ -13,31 +16,37 @@ offset_left = 444.0
 offset_top = 474.0
 offset_right = 988.0
 offset_bottom = 861.0
-scale = Vector2(1.5, 1.5)
 
 [node name="piece_list" parent="." instance=ExtResource("2_e1pnw")]
 offset_left = 1364.0
 offset_top = 5.0
-offset_right = 2028.0
+offset_right = 1900.0
 offset_bottom = 1067.0
 
 [node name="cursor_piece" parent="." instance=ExtResource("5_fn06i")]
 visible = false
 
 [node name="money" parent="." instance=ExtResource("4_jjj0s")]
-offset_left = 11.0
-offset_top = 2.0
-offset_right = 1257.0
-offset_bottom = 201.0
+offset_left = 56.0
+offset_top = 59.0
+offset_right = 1302.0
+offset_bottom = 258.0
+theme = SubResource("Theme_edryn")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("5_tbhhc")
 theme_override_font_sizes/normal_font_size = 100
 text = "$1,000,000,000,000"
 money = 1000000000000
 
 [node name="date" parent="." instance=ExtResource("4_jjj0s")]
-offset_left = 9.0
-offset_top = 190.0
-offset_right = 815.0
-offset_bottom = 290.0
+offset_left = 56.0
+offset_top = 183.0
+offset_right = 862.0
+offset_bottom = 283.0
+theme = SubResource("Theme_edryn")
+theme_override_colors/default_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/normal_font = ExtResource("5_tbhhc")
 theme_override_font_sizes/normal_font_size = 30
+text = "January 1, 2030"
 script = ExtResource("5_30x5y")
 date_change_time = 1.0

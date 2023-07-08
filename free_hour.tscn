@@ -3,9 +3,26 @@
 [ext_resource type="Script" path="res://free_hour.gd" id="1_88i0o"]
 
 [node name="GridSpot" type="ColorRect"]
-custom_minimum_size = Vector2(100, 60)
-color = Color(0.521569, 0.521569, 0.521569, 1)
+custom_minimum_size = Vector2(150, 90)
+color = Color(0.317647, 0.317647, 0.317647, 1)
 script = ExtResource("1_88i0o")
+
+[node name="gd" type="ColorRect" parent="."]
+visible = false
+z_index = -1
+offset_top = 78.0
+offset_right = 150.0
+offset_bottom = 105.0
+mouse_filter = 2
+
+[node name="gr" type="ColorRect" parent="."]
+visible = false
+z_index = -1
+layout_mode = 0
+offset_left = 136.0
+offset_right = 165.0
+offset_bottom = 90.0
+mouse_filter = 2
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

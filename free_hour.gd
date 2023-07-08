@@ -3,11 +3,13 @@ extends ColorRect
 var mouseover = false;
 var parent;
 var default_color
+var cur_color
 var new_week_color
 @export var idx: int;
 
 var highlight_node = preload("res://date_highlight.tscn")
 var highlight_obj
+var highlighted = false
 var date
 var old_month
 var date_counter
@@ -21,14 +23,20 @@ func _ready():
 	date.call_on_date_update(self)
 	old_month = -1
 	date_counter = -1
-	clear_highlight()
+
 	parent = get_parent()
 	if parent.add_child_hour != null:
 		parent.add_child_hour(self)
 	default_color = color
+	cur_color = default_color
 	reset_color = default_color
 	#new_week_color = color + Color(0.125, 0.125, 0.125, 0.0)
 	update_date(0, 0, 2030)
+	highlight_obj.visible = false
+	if idx == 0:
+		highlight()
+	else:
+		clear_highlight()
 	
 func update_date(_newdate, _month, _year):
 	pass
@@ -42,17 +50,40 @@ func update_date(_newdate, _month, _year):
 		#if get_color() == new_week_color or get_color() == default_color:
 		#	set_color(reset_color)
 
-func set_full(new_color):
-	set_color(new_color)
+#func set_full(new_color, growth):
+func set_full(new_color, growth):
+	cur_color = new_color
+	set_color(cur_color)	
+	if highlighted:
+		highlight()
+	
+	var dc = 0.02
+	if growth[0]:
+		$gd.visible = true
+		$gd.color = cur_color - Color(dc, dc, dc, 0.0)
+	if growth[1]:
+		$gr.visible = true
+		$gr.color = cur_color  - Color(dc, dc, dc, 0.0)
 
 func clear():
 	set_color(reset_color)
+	cur_color = reset_color
+	if highlighted:
+		highlight()
+	$gd.visible = false
+	$gr.visible = false
 	
 func clear_highlight():
-	highlight_obj.visible = false
+	highlighted = false
+	set_color(cur_color)
+	#highlight_obj.visible = false
 
 func highlight():
-	highlight_obj.visible = true
+	highlighted = true
+	var hcolor = cur_color + Color(0.15, 0.15, 0.15)
+	set_color(hcolor)
+	
+	#highlight_obj.visible = true
 	
 func _on_mouse_entered():
 	mouseover = true

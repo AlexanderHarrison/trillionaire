@@ -1,6 +1,6 @@
 extends Container
 
-@export var piece_name: String;
+@export_multiline var piece_name: String;
 @export var arr: Array[bool];
 @export var width: int;
 @export var color: Color;
@@ -15,7 +15,7 @@ var cursorpiece
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$BoxContainer/piece.update_arr(
+	$BoxContainer/CenterContainer2/piece.update_arr(
 		arr, 
 		width, 
 		color, 
@@ -25,11 +25,11 @@ func _ready():
 		is_buy_asset,
 		asset_node_name
 	)
-	$CenterContainer/name.set_text(piece_name);
+	$BoxContainer/CenterContainer/VBoxContainer/name.set_text(piece_name);
 	if money_loss > 0:
-		$CenterContainer/effect.set_text(format_money(-money_loss));
+		$BoxContainer/CenterContainer/VBoxContainer/effect.set_text(format_money(-money_loss));
 	else:
-		$CenterContainer/effect.set_text("+%d research" % research_gain);
+		$BoxContainer/CenterContainer/VBoxContainer/effect.set_text("+%d research" % research_gain);
 	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
 
 func _on_mouse_entered():
@@ -45,7 +45,7 @@ func _on_gui_input(event):
 		and mouseover:
 		if cursorpiece.has_cursor():
 			cursorpiece.clear_cursor()
-		cursorpiece.start_cursor($BoxContainer/piece)
+		cursorpiece.start_cursor($BoxContainer/CenterContainer2/piece)
 
 func format_money(m):
 	var txt
