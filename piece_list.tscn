@@ -15,7 +15,7 @@ piece_name = "Piece 1"
 arr = Array[bool]([true, true, true, true])
 width = 1
 color = Color(0, 0.647059, 1, 1)
-money_loss = 1000
+money_loss = 987
 
 [node name="Container2" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
 layout_mode = 2
@@ -23,4 +23,12 @@ piece_name = "Piece 2"
 arr = Array[bool]([true, false, false, true, true, true])
 width = 3
 color = Color(0.788235, 0, 0, 1)
-money_loss = 2000
+money_loss = 2144
+
+[node name="Container3" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "RESEARCH MONEY LOSS"
+arr = Array[bool]([true, true])
+width = 1
+color = Color(1, 1, 1, 1)
+money_loss = 100
