@@ -7,7 +7,7 @@ extends GridContainer
 @export var required_level: int;
 @export var research_gain: int;
 @export var is_buy_asset: bool;
-@export var asset_node_name: Node;
+@export var asset_node_name: String;
 
 var internal_arr = [];
 
@@ -19,7 +19,10 @@ func _ready():
 	if width > 0:
 		update_arr(arr, width, color, money_loss, required_level, research_gain, is_buy_asset, asset_node_name)
 
-func update_arr(new_arr, new_width, new_color, new_money_loss, new_required_level, new_research_gain, new_is_buy_asset, new_asset_node_name):
+func update_arr(new_arr, new_width, new_color, new_money_loss, 
+	new_required_level, new_research_gain, new_is_buy_asset, 
+	new_asset_node_name):
+		
 	arr = new_arr
 	width = new_width
 	color = new_color

@@ -22,9 +22,9 @@ func format_text(m):
 	if segments.size() == 0:
 		return "$0"
 	else:
-		var text = "$%s" % segments[0]
+		var txt = "$%s" % segments[0]
 		for i in segments.size()-1:
 			var seg = segments[i+1]
-			text = "%s,%0*d" % [text, 3, seg]
-		return text
+			txt = "%s,%0*d" % [txt, 3, seg]
+		return txt
 		

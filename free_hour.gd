@@ -26,19 +26,21 @@ func _ready():
 	if parent.add_child_hour != null:
 		parent.add_child_hour(self)
 	default_color = color
-	new_week_color = color + Color(0.125, 0.125, 0.125, 0.0)
+	reset_color = default_color
+	#new_week_color = color + Color(0.125, 0.125, 0.125, 0.0)
 	update_date(0, 0, 2030)
 	
-func update_date(newdate, month, _year):
-	date_counter += 1
-	if month != old_month:
-		old_month = month
-		if (idx + date_counter) % 7 == 0:
-			reset_color = new_week_color
-		else:
-			reset_color = default_color
-		if get_color() == new_week_color or get_color() == default_color:
-			set_color(reset_color)
+func update_date(_newdate, _month, _year):
+	pass
+	#date_counter += 1
+	#if month != old_month:
+		#old_month = month
+		#if (idx + date_counter) % 7 == 0:
+		#	reset_color = new_week_color
+		#else:
+		#	reset_color = default_color
+		#if get_color() == new_week_color or get_color() == default_color:
+		#	set_color(reset_color)
 
 func set_full(new_color):
 	set_color(new_color)

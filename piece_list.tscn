@@ -35,7 +35,6 @@ piece_name = "RESEARCH MONEY LOSS"
 arr = Array[bool]([true, true])
 width = 2
 color = Color(1, 1, 1, 1)
-money_loss = 100
 research_gain = 1
 
 [node name="piece1" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
@@ -87,8 +86,3 @@ width = 3
 color = Color(0.321569, 0.792157, 0, 1)
 money_loss = 3132
 research_level = 1
-
-[node name="Container" parent="VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-is_buy_asset = true
-asset_node_name = "car"

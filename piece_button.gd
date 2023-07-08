@@ -25,7 +25,11 @@ func _ready():
 		is_buy_asset,
 		asset_node_name
 	)
-	$CenterContainer/RichTextLabel.set_text(piece_name);
+	$CenterContainer/name.set_text(piece_name);
+	if money_loss > 0:
+		$CenterContainer/effect.set_text(format_money(-money_loss));
+	else:
+		$CenterContainer/effect.set_text("+%d research" % research_gain);
 	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
 
 func _on_mouse_entered():
@@ -42,3 +46,27 @@ func _on_gui_input(event):
 		if cursorpiece.has_cursor():
 			cursorpiece.clear_cursor()
 		cursorpiece.start_cursor($BoxContainer/piece)
+
+func format_money(m):
+	var txt
+	if m < 0:
+		txt = "-$"
+		m = -m
+	else:
+		txt = "$"
+		
+	var segments = []
+	while m > 0:
+		segments.append(m % 1000)
+		m = floori(m / 1000)
+	
+	segments.reverse()
+	
+	if segments.size() == 0:
+		return "$0"
+	else:
+		txt = "%s%s" % [txt, segments[0]]
+		for i in segments.size()-1:
+			var seg = segments[i+1]
+			txt = "%s,%0*d" % [txt, 3, seg]
+		return txt
