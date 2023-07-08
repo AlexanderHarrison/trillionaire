@@ -12,9 +12,9 @@ func _process(_delta):
 func has_cursor():
 	return visible
 	
-func start_cursor(arr, width):
+func start_cursor(temp_p):
 	piece = piece_node.instantiate()
-	piece.update_arr(arr, width)
+	piece.update_arr(temp_p.arr, temp_p.width, temp_p.color)
 	add_child(piece)
 	visible = true
 

@@ -2,6 +2,7 @@ extends GridContainer
 
 @export var arr: Array[bool];
 @export var width: int;
+@export var color: Color;
 
 var internal_arr = [];
 
@@ -11,11 +12,12 @@ var free_hour = preload("res://blank_hour.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if width > 0:
-		update_arr(arr, width)
+		update_arr(arr, width, color)
 
-func update_arr(new_arr, new_width):
+func update_arr(new_arr, new_width, new_color):
 	arr = new_arr
 	width = new_width
+	color = new_color
 	internal_arr = []
 	for n in get_children():
 		remove_child(n)
@@ -33,6 +35,7 @@ func update_arr(new_arr, new_width):
 			internal_arr[y].append(true)
 			var h = hour.instantiate()
 			h.mouse_filter = MOUSE_FILTER_PASS
+			h.color = color
 			add_child(h)
 		else:
 			internal_arr[y].append(false)
