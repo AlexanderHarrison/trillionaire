@@ -29,7 +29,7 @@ offset_left = 11.0
 offset_top = 2.0
 offset_right = 817.0
 offset_bottom = 102.0
-money = 999999999999
+money = 1000000000000
 
 [node name="date" parent="." instance=ExtResource("4_jjj0s")]
 offset_left = 23.0

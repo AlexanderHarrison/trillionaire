@@ -13,6 +13,15 @@ var calendar = [
 	[false, false, false, false, false],
 ];
 
+var data = [
+	[null, null, null, null, null], 
+	[null, null, null, null, null], 
+	[null, null, null, null, null], 
+	[null, null, null, null, null], 
+	[null, null, null, null, null],
+	[null, null, null, null, null]
+]
+
 var pieces = [
 	[0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0],
@@ -36,19 +45,27 @@ var hour_nodes = [
 ]
 
 var date
+var money
 
 func _ready():
 	var root = get_tree().root.get_child(0)
 	date = root.get_node("date")
+	money = root.get_node("money")
 	date.call_on_date_update(self)
 	cursorpiece = root.get_node("cursor_piece")
 
 func update_date(newdate, _month, _year):
+	var x = newdate % 5
+	var y = floori(newdate as float / 5)
 	for row in hour_nodes:
 		for n in row:
 			n.clear_highlight()
 	
-	hour_nodes[floori(newdate as float / 5)][newdate % 5].highlight()
+	hour_nodes[y][x].highlight()
+	if calendar[y][x]:
+		var loss = data[y][x][0]
+		money.remove_money(loss)
+	
 
 func add_child_hour(hour):
 	var here_x: int = hour.idx % 5
@@ -104,6 +121,7 @@ func add_arrangement(idx, piece):
 			if arrangement[y][x]:
 				calendar[here_y+y][here_x+x] = true
 				pieces[here_y+y][here_x+x] = piece_idx
+				data[here_y+y][here_x+x] = [piece.money_loss]
 				var node = hour_nodes[here_y+y][here_x+x]
 				node.set_full(color)
 	piece_idx += 1

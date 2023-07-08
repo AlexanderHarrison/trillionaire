@@ -6,6 +6,11 @@ extends RichTextLabel
 func _process(_delta):
 	text = format_text(money)
 
+func remove_money(loss):
+	money -= loss
+	if money < 0:
+		money = 0
+
 func format_text(m):
 	var segments = []
 	while m > 0:
