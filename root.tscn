@@ -7,6 +7,8 @@
 [node name="root" type="Node2D"]
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
+offset_left = 7.0
+offset_right = 551.0
 
 [node name="piece_list" parent="." instance=ExtResource("2_e1pnw")]
 offset_left = 825.0
