@@ -23,12 +23,12 @@ func update_arr(new_arr, new_width):
 	
 	columns = width
 		
-	var height = floor(arr.size() / width)
+	var height = floor(arr.size() as float / width)
 	for y in height:
 		internal_arr.append([])
 		
 	for i in arr.size():
-		var y = floori(i / width)
+		var y = floori(i as float / width)
 		if arr[i]:
 			internal_arr[y].append(true)
 			var h = hour.instantiate()

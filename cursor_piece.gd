@@ -1,6 +1,7 @@
 extends Node2D
 
 var piece = null
+var piece_node = preload("res://piece.tscn")
 
 func _process(_delta):
 	var mouse_position = get_viewport().get_mouse_position()
@@ -11,9 +12,10 @@ func _process(_delta):
 func has_cursor():
 	return visible
 	
-func start_cursor(new_piece):
-	piece = new_piece
-	add_child(piece.duplicate())
+func start_cursor(arr, width):
+	piece = piece_node.instantiate()
+	piece.update_arr(arr, width)
+	add_child(piece)
 	visible = true
 
 func clear_cursor():
