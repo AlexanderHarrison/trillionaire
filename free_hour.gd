@@ -7,11 +7,14 @@ var default_color
 
 var highlight_node = preload("res://date_highlight.tscn")
 var highlight_obj
+var date
 
 func _ready():
 	default_color = color
 	highlight_obj = highlight_node.instantiate()
 	add_child(highlight_obj)
+	var root = get_tree().root.get_child(0)
+	date = root.get_node("date")
 	clear_highlight()
 	parent = get_parent()
 	if parent.add_child_hour != null:
