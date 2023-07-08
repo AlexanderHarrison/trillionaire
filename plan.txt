@@ -10,7 +10,7 @@ Entities:
 - Portfolio
   - Gives or takes the sum of the changes in value to all owned stocks and crypto daily
 
-- Item
+- Asset
   - Can give or take some amount of money at some times
 
 - Company
@@ -20,9 +20,9 @@ Entities:
 
 Choices:
 
-- Buy Item [0]
+- Buy Asset [0]
   - Deduct some amount of money
-  - Receive some item
+  - Receive some asset
 
 - Buy Stock [0]
   - Choose a stock to add to your portfolio from a list of three
