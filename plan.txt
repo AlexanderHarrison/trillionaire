@@ -20,7 +20,7 @@ Entities:
 
 Choices:
 
-- Purchase Item [0]
+- Buy Item [0]
   - Deduct some amount of money
   - Receive some item
 
@@ -49,8 +49,9 @@ Choices:
 - Gamble [2]
   - Deduct some amount of money
   - Extremely small chance to receive a multiple of the amount deducted
+  - Chance to develop gambling dependency (automatically added to schedule)
 
-- Lawsuit [2]
+- Unnecessary Lawsuit [2]
   - Deduct some amount of money weekly for some amount of weeks
   - Restricts schedule space
 
@@ -63,6 +64,8 @@ Choices:
 - Expand Company [1]
   - Deduct some amount of money
   - Company spending and earning both increase by some amount independently
+
+- 
 
 
 Events:
@@ -78,3 +81,5 @@ Events:
 - Stock Market Crash
   - Occurs randomly
   - Value of all stocks and/or cryptocurrencies decrease sharply
+
+- 
