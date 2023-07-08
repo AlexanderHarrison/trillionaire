@@ -66,150 +66,120 @@ columns = 5
 script = ExtResource("1_5jjap")
 
 [node name="free1" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 
 [node name="free2" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 1
 
 [node name="free3" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 2
 
 [node name="free4" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 3
 
 [node name="free5" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 4
 
 [node name="free6" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 5
 
 [node name="free7" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 6
 
 [node name="free8" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 7
 
 [node name="free9" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 8
 
 [node name="free10" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 9
 
 [node name="free11" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 10
 
 [node name="free12" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 11
 
 [node name="free13" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 12
 
 [node name="free14" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 13
 
 [node name="free15" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 14
 
 [node name="free16" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 15
 
 [node name="free17" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 16
 
 [node name="free18" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 17
 
 [node name="free19" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 18
 
 [node name="free20" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 19
 
 [node name="free21" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 20
 
 [node name="free22" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 21
 
 [node name="free23" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 22
 
 [node name="free24" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 23
 
 [node name="free25" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 24
 
 [node name="free26" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 25
 
 [node name="free27" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 26
 
 [node name="free28" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 27
 
 [node name="free29" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 28
 
 [node name="free30" parent="schedule" instance=ExtResource("1_u2jjd")]
-custom_minimum_size = Vector2(150, 90)
 layout_mode = 2
 idx = 29

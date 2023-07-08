@@ -29,3 +29,10 @@ func clear_cursor():
 
 func get_piece():
 	return piece
+
+
+func _on_mouse_catcher_gui_input(event):
+	if event is InputEventMouseButton \
+		and event.button_index == MOUSE_BUTTON_RIGHT \
+		and event.is_pressed():
+		clear_cursor()

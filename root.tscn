@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b41rqtcu1oc2u"]
+[gd_scene load_steps=9 format=3 uid="uid://b41rqtcu1oc2u"]
 
 [ext_resource type="PackedScene" uid="uid://b7ydvhu6dysqm" path="res://schedule.tscn" id="1_4imot"]
 [ext_resource type="PackedScene" uid="uid://dv7xqiy3lh8db" path="res://piece_list.tscn" id="2_e1pnw"]
@@ -6,10 +6,17 @@
 [ext_resource type="Script" path="res://date.gd" id="5_30x5y"]
 [ext_resource type="PackedScene" uid="uid://cqi8h3idr3n0o" path="res://cursor_piece.tscn" id="5_fn06i"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="5_tbhhc"]
+[ext_resource type="PackedScene" uid="uid://81ok0f8ws6ti" path="res://background.tscn" id="7_1ury8"]
 
 [sub_resource type="Theme" id="Theme_edryn"]
 
 [node name="root" type="Node2D"]
+
+[node name="mouse_catcher" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1916.0
+offset_bottom = 1080.0
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
 offset_left = 444.0
@@ -31,6 +38,7 @@ offset_left = 56.0
 offset_top = 59.0
 offset_right = 1302.0
 offset_bottom = 258.0
+mouse_filter = 2
 theme = SubResource("Theme_edryn")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_tbhhc")
@@ -43,6 +51,7 @@ offset_left = 56.0
 offset_top = 183.0
 offset_right = 862.0
 offset_bottom = 283.0
+mouse_filter = 2
 theme = SubResource("Theme_edryn")
 theme_override_colors/default_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_fonts/normal_font = ExtResource("5_tbhhc")
@@ -50,3 +59,7 @@ theme_override_font_sizes/normal_font_size = 30
 text = "January 1, 2030"
 script = ExtResource("5_30x5y")
 date_change_time = 1.0
+
+[node name="background" parent="." instance=ExtResource("7_1ury8")]
+
+[connection signal="gui_input" from="mouse_catcher" to="cursor_piece" method="_on_mouse_catcher_gui_input"]
