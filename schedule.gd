@@ -115,6 +115,7 @@ func valid_arrangement(idx, arrangement):
 func add_arrangement(idx, piece):
 	var arrangement = piece.arrangement()
 	var color = piece.color
+	color.a = 1.0
 	var here_x: int = idx % 5
 	var here_y: int = floori(idx / 5)
 	
