@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbe0nr46vkpjb"]
+[gd_scene load_steps=4 format=3 uid="uid://dbe0nr46vkpjb"]
 
 [ext_resource type="Script" path="res://piece_button.gd" id="1_36sim"]
 [ext_resource type="PackedScene" uid="uid://c82kbejlao12d" path="res://piece.tscn" id="2_lqdme"]
+[ext_resource type="AudioStream" uid="uid://mnjwdovrhdnk" path="res://pickup.wav" id="3_jiomm"]
 
 [node name="Container" type="MarginContainer"]
 offset_right = 556.0
@@ -50,6 +51,9 @@ theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 text = "EFFECT
 "
 vertical_alignment = 1
+
+[node name="click_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jiomm")
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

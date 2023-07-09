@@ -10,6 +10,8 @@ func check_research(_a):
 	pass
 	
 func next_piece_loss(money):
+	var new = false
+	
 	var loss = 1000000000000 - money
 	var min_loss = 1000000000000
 	for child in $VBoxContainer.get_children():
@@ -19,5 +21,9 @@ func next_piece_loss(money):
 				if child.required_loss - loss < min_loss:
 					min_loss = child.required_loss - loss
 			else:
+				if not child.visible:
+					new = true
 				child.visible = true
+	if new:
+		$new_piece.play()
 	return min_loss

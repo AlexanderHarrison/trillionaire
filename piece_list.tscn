@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv7xqiy3lh8db"]
+[gd_scene load_steps=6 format=3 uid="uid://dv7xqiy3lh8db"]
 
 [ext_resource type="Script" path="res://piece_list.gd" id="1_24k6r"]
 [ext_resource type="PackedScene" uid="uid://dbe0nr46vkpjb" path="res://piece_button.tscn" id="1_k4c1u"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="2_lavli"]
 [ext_resource type="Script" path="res://research_label.gd" id="2_oa6ta"]
+[ext_resource type="AudioStream" uid="uid://cakll1xrb4js4" path="res://new_piece.wav" id="5_xcvsg"]
 
 [node name="Control" type="VBoxContainer"]
 offset_right = 869.0
@@ -240,3 +241,7 @@ width = 2
 color = Color(0.8, 0.8, 0.8, 1)
 money_loss = -1200
 research_gain = 1
+
+[node name="new_piece" type="AudioStreamPlayer" parent="piece_list"]
+stream = ExtResource("5_xcvsg")
+volume_db = -15.0

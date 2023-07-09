@@ -40,6 +40,7 @@ func _on_gui_input(event):
 		and event.button_index == MOUSE_BUTTON_LEFT \
 		and event.is_pressed() \
 		and mouseover:
+		$click_player.play()
 		if cursorpiece.has_cursor():
 			cursorpiece.clear_cursor()
 		cursorpiece.start_cursor($BoxContainer/CenterContainer2/piece)
