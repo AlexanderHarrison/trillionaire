@@ -6,8 +6,8 @@
 [ext_resource type="Script" path="res://research_label.gd" id="2_oa6ta"]
 
 [node name="Control" type="VBoxContainer"]
-offset_right = 595.0
-offset_bottom = 1083.0
+offset_right = 869.0
+offset_bottom = 1628.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 200)
@@ -20,16 +20,215 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_lavli")
 theme_override_font_sizes/font_size = 30
 text = "adasdas"
+horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_oa6ta")
 
 [node name="piece_list" type="ScrollContainer" parent="."]
-custom_minimum_size = Vector2(0, 850)
+custom_minimum_size = Vector2(0, 1200)
 layout_mode = 2
 script = ExtResource("1_24k6r")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="piece_list"]
+layout_direction = 2
 layout_mode = 2
+
+[node name="piece20" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Buy a social media 
+company"
+arr = Array[bool]([true, true, true, true])
+width = 1
+color = Color(0.4, 0.6, 0.8, 1)
+money_loss = 44000000000
+required_loss = 120000000000
+
+[node name="piece19" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Terraform Venus"
+arr = Array[bool]([true, false, false, true, true, true])
+width = 3
+color = Color(0.94902, 0.466667, 0.478431, 1)
+money_loss = 10000000000
+required_loss = 30000000000
+
+[node name="piece18" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Launch a golden 
+rocket"
+arr = Array[bool]([true, true, false, false, true, true])
+width = 3
+color = Color(0.976471, 0.568627, 0.341176, 1)
+money_loss = 5000000000
+required_loss = 15000000000
+
+[node name="piece17" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Reconstruct 
+dinosaurs for 
+a theme park"
+arr = Array[bool]([true, true, true, false, false, false, true, false])
+width = 2
+color = Color(1, 0.8, 0.4, 1)
+money_loss = 1000000000
+required_loss = 3000000000
+
+[node name="piece16" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Deliver a pizza to 
+every doorstep in
+New York"
+arr = Array[bool]([true, false, true, false, true])
+width = 5
+color = Color(0.8, 0.6, 0.8, 1)
+money_loss = 500000000
+required_loss = 1500000000
+
+[node name="piece15" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Buy black market
+organs"
+arr = Array[bool]([true, true, true, false, false, false, true, true])
+width = 4
+color = Color(0.6, 0.8, 0.6, 1)
+money_loss = 250000000
+required_loss = 750000000
+
+[node name="piece14" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Become Batman"
+arr = Array[bool]([true, true, true, false, false, false, true, true])
+width = 4
+color = Color(0.6, 0.8, 0.6, 1)
+money_loss = 200000000
+required_loss = 600000000
+
+[node name="piece13" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Build a new pyramid 
+in Egypt"
+arr = Array[bool]([true, false, true, false, true])
+width = 5
+color = Color(0.8, 0.6, 0.8, 1)
+money_loss = 125000000
+required_loss = 375000000
+
+[node name="piece12" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Buy yacht fleet"
+arr = Array[bool]([true, true, true, true])
+width = 1
+color = Color(0.4, 0.6, 0.8, 1)
+money_loss = 80000000
+required_loss = 240000000
+
+[node name="piece11" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Hodl Dogecoin"
+arr = Array[bool]([true, false, false, true, true, true])
+width = 3
+color = Color(0.94902, 0.466667, 0.478431, 1)
+money_loss = 50000000
+required_loss = 150000000
+
+[node name="piece10" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Bury treasure for 
+pirates to find"
+arr = Array[bool]([true, true, false, false, true, true])
+width = 3
+color = Color(0.976471, 0.568627, 0.341176, 1)
+money_loss = 30000000
+required_loss = 90000000
+
+[node name="piece9" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Perform neurosurgery
+on every patient in 
+a hospital"
+arr = Array[bool]([true, true, true, false, false, false, true, false])
+width = 2
+color = Color(1, 0.8, 0.4, 1)
+money_loss = 15000000
+required_loss = 45000000
+
+[node name="piece8" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Buy the Tampa Bay 
+Buccaneers"
+arr = Array[bool]([true, false, true, false, true])
+width = 5
+color = Color(0.8, 0.6, 0.8, 1)
+money_loss = 8000000
+required_loss = 24000000
+
+[node name="piece7" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Donate to a 
+struggling Nigerian 
+prince"
+arr = Array[bool]([true, true, true, false, false, false, true, true])
+width = 4
+color = Color(0.6, 0.8, 0.6, 1)
+money_loss = 3000000
+required_loss = 9000000
+
+[node name="piece6" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Tip 10000% on a 
+steak dinner"
+arr = Array[bool]([true, true, true, false, false, false, true, true])
+width = 4
+color = Color(0.6, 0.8, 0.6, 1)
+money_loss = 700000
+required_loss = 2100000
+
+[node name="piece5" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Sponsor the World 
+Youth Darts Cup"
+arr = Array[bool]([true, false, true, false, true])
+width = 5
+color = Color(0.8, 0.6, 0.8, 1)
+money_loss = 400000
+required_loss = 1200000
+
+[node name="piece4" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Build a bridge over 
+troubled water"
+arr = Array[bool]([true, true, true, false, false, false, true, false])
+width = 2
+color = Color(1, 0.8, 0.4, 1)
+money_loss = 250000
+required_loss = 750000
+
+[node name="piece3" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Pay for child's 
+education"
+arr = Array[bool]([true, true, false, false, true, true])
+width = 3
+color = Color(0.976471, 0.568627, 0.341176, 1)
+money_loss = 100000
+required_loss = 200000
+
+[node name="piece2" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Donate to homeless
+charity"
+arr = Array[bool]([true, false, false, true, true, true])
+width = 3
+color = Color(0.94902, 0.466667, 0.478431, 1)
+money_loss = 20000
+
+[node name="piece1" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
+layout_mode = 2
+piece_name = "Build a well in Africa"
+arr = Array[bool]([true, true, true, true])
+width = 1
+color = Color(0.4, 0.6, 0.8, 1)
+money_loss = 100000000000
 
 [node name="_piece_research" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
 visible = false
@@ -41,49 +240,3 @@ width = 2
 color = Color(0.8, 0.8, 0.8, 1)
 money_loss = -1200
 research_gain = 1
-
-[node name="piece6" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, true, true, false, false, false, true, true])
-width = 4
-color = Color(0.6, 0.8, 0.6, 1)
-money_loss = 123000
-required_loss = 200000
-
-[node name="piece5" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, false, true, false, true])
-width = 5
-color = Color(0.8, 0.6, 0.8, 1)
-money_loss = 56000
-required_loss = 100000
-
-[node name="piece4" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, true, true, false, false, false, true, false])
-width = 2
-color = Color(1, 0.8, 0.4, 1)
-money_loss = 25153
-required_loss = 50000
-
-[node name="piece3" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, true, false, false, true, true])
-width = 3
-color = Color(0.976471, 0.568627, 0.341176, 1)
-money_loss = 5384
-required_loss = 20000
-
-[node name="piece2" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, false, false, true, true, true])
-width = 3
-color = Color(0.94902, 0.466667, 0.478431, 1)
-money_loss = 2351
-
-[node name="piece1" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
-layout_mode = 2
-arr = Array[bool]([true, true, true, true])
-width = 1
-color = Color(0.4, 0.6, 0.8, 1)
-money_loss = 100000000000

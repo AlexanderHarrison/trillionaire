@@ -14,6 +14,7 @@ func remove_money(loss):
 	if money < 0:
 		money = 0
 		quit_next = true
+		text = format_money(money)
 		return
 	text = format_money(money)
 	var icon = money_icon.instantiate()
