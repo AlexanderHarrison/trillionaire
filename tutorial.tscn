@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://kklu4ftlslkh"]
 
-[ext_resource type="Texture2D" uid="uid://0fj4ly4f442g" path="res://scrot_tutorial.png" id="1_3clm4"]
+[ext_resource type="Texture2D" uid="uid://pobkfiekmb6t" path="res://scrot_tutorial.png" id="1_3clm4"]
 [ext_resource type="Script" path="res://tutorial.gd" id="1_880pg"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="2_81gk8"]
 

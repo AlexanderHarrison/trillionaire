@@ -69,13 +69,13 @@ autowrap_mode = 3
 script = ExtResource("3_vbdho")
 
 [node name="m3" type="MarginContainer" parent="cont"]
-custom_minimum_size = Vector2(0, 330)
+custom_minimum_size = Vector2(0, 250)
 layout_mode = 2
 mouse_filter = 2
 
 [node name="heart" type="Sprite2D" parent="cont"]
-position = Vector2(522, 504)
-scale = Vector2(0.70144, 0.635034)
+position = Vector2(512, 470)
+scale = Vector2(0.544079, 0.460095)
 texture = ExtResource("4_2y322")
 script = ExtResource("5_53h5f")
 

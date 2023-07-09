@@ -36,9 +36,9 @@ offset_bottom = 1080.0
 
 [node name="schedule" parent="." instance=ExtResource("1_4imot")]
 offset_left = 471.0
-offset_top = 388.0
+offset_top = 300.0
 offset_right = 1237.0
-offset_bottom = 986.0
+offset_bottom = 898.0
 
 [node name="piece_list" parent="." instance=ExtResource("2_e1pnw")]
 offset_left = 1254.0
