@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://preview/cont.gd" id="1_j5b8u"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="1_n7hxt"]
-[ext_resource type="Texture2D" uid="uid://k2hq0qwdchkw" path="res://preview/heart.svg" id="2_oaalm"]
 [ext_resource type="Script" path="res://preview/line.gd" id="3_je6j7"]
+[ext_resource type="Texture2D" uid="uid://ccffom1sh7w4w" path="res://heart.png" id="4_wdt1y"]
 [ext_resource type="Script" path="res://preview/heart.gd" id="5_kd2o0"]
 [ext_resource type="AudioStream" uid="uid://djv0ggbwcumq0" path="res://preview/heartbeat.mp3" id="6_0cpsx"]
 
@@ -71,9 +71,9 @@ layout_mode = 2
 mouse_filter = 2
 
 [node name="heart" type="Sprite2D" parent="cont"]
-position = Vector2(515, 506)
-scale = Vector2(2.21538, 2.21538)
-texture = ExtResource("2_oaalm")
+position = Vector2(509, 505)
+scale = Vector2(0.779431, 0.779431)
+texture = ExtResource("4_wdt1y")
 script = ExtResource("5_kd2o0")
 
 [node name="beat" type="AudioStreamPlayer" parent="cont/heart"]

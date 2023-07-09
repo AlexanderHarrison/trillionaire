@@ -18,9 +18,10 @@ var reset_color
 func _ready():
 	highlight_obj = highlight_node.instantiate()
 	add_child(highlight_obj)
-	var root = get_tree().root.get_child(0)
-	date = root.get_node("date")
-	date.call_on_date_update(self)
+	#var root = get_tree().root.get_child(0)
+	#date = root.get_node("date")
+	#date = root.get_child(4)
+	#date.call_on_date_update(self)
 	old_month = -1
 	date_counter = -1
 

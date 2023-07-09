@@ -50,15 +50,18 @@ var research
 var anim
 
 func _ready():
-	var root = get_tree().root.get_child(0)
+	var root = get_tree().root.get_node("/root/root")
 	date = root.get_node("date")
 	money = root.get_node("money")
 	anim = root.get_node("anim")
-	date.call_on_date_update(self)
+	#date.call_on_date_update(self)
 	cursorpiece = root.get_node("cursor_piece")
 	research = root.get_node("piece_list/VBoxContainer/research_label")
 
-func update_date(newdate, _month, _year):
+func update_date(newdate, month, year):
+	Stats.g_date = newdate
+	Stats.g_month = month
+	Stats.g_year = year
 	var x = newdate % 5
 	var y = floori(newdate as float / 5)
 	for row in hour_nodes:
@@ -70,7 +73,9 @@ func update_date(newdate, _month, _year):
 		var loss = data[y][x][0]
 		money.remove_money(loss)
 		research.check_loss(money.money)
-		anim.start_anim(data[y][x][1])
+		var idx = data[y][x][1]
+		anim.start_anim(idx)
+		Stats.calls[idx] += 1
 	
 
 func add_child_hour(hour):

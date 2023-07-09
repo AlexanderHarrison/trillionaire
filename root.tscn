@@ -13,6 +13,20 @@
 
 [node name="root" type="Node2D"]
 
+[node name="date" parent="." instance=ExtResource("4_jjj0s")]
+offset_left = 72.0
+offset_top = 194.0
+offset_right = 878.0
+offset_bottom = 294.0
+mouse_filter = 2
+theme = SubResource("Theme_edryn")
+theme_override_colors/default_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/normal_font = ExtResource("5_tbhhc")
+theme_override_font_sizes/normal_font_size = 30
+text = "January 1, 2030"
+script = ExtResource("5_30x5y")
+date_change_time = 1.0
+
 [node name="mouse_catcher" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -47,20 +61,6 @@ theme_override_fonts/normal_font = ExtResource("5_tbhhc")
 theme_override_font_sizes/normal_font_size = 100
 text = "$1,000,000,000,000"
 money = 1000000000000
-
-[node name="date" parent="." instance=ExtResource("4_jjj0s")]
-offset_left = 72.0
-offset_top = 194.0
-offset_right = 878.0
-offset_bottom = 294.0
-mouse_filter = 2
-theme = SubResource("Theme_edryn")
-theme_override_colors/default_color = Color(0.8, 0.8, 0.8, 1)
-theme_override_fonts/normal_font = ExtResource("5_tbhhc")
-theme_override_font_sizes/normal_font_size = 30
-text = "January 1, 2030"
-script = ExtResource("5_30x5y")
-date_change_time = 1.0
 
 [node name="background" parent="." instance=ExtResource("7_1ury8")]
 

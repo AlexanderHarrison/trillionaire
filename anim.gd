@@ -7,7 +7,7 @@ var cur
 var showing
 var timer = 0
 var anim_time = 0.5
-var show_time = 1.0
+var show_time = 0.85
 
 var offset = Vector2(20, 20)
 
@@ -28,7 +28,7 @@ func _process(delta):
 		timer += delta
 	
 		var t = min(timer, anim_time) / anim_time
-		var t2 = min(timer, show_time*0.85) / (show_time*0.85)
+		var t2 = min(timer, show_time) / show_time
 		t = 0.5 + cos(3.14159 * t)/2.0
 		var alpha = 1 - pow(2*t2-1, 6)
 		fg.position = offset * t

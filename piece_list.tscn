@@ -249,7 +249,7 @@ piece_name = "Build a well in Africa"
 arr = Array[bool]([true, true, true, true])
 width = 1
 color = Color(0.4, 0.6, 0.8, 1)
-money_loss = 8000
+money_loss = 100000000000
 
 [node name="_piece_research" parent="piece_list/VBoxContainer" instance=ExtResource("1_k4c1u")]
 visible = false

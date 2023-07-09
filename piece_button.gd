@@ -23,7 +23,7 @@ func _ready():
 	)
 	$BoxContainer/CenterContainer/VBoxContainer/name.set_text(piece_name);
 	$BoxContainer/CenterContainer/VBoxContainer/effect.set_text(format_money(-money_loss));
-	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
+	cursorpiece = get_tree().root.get_child(1).get_node("cursor_piece")
 
 func _on_mouse_entered():
 	mouseover = true
@@ -40,6 +40,11 @@ func _on_gui_input(event):
 		if cursorpiece.has_cursor():
 			cursorpiece.clear_cursor()
 		cursorpiece.start_cursor($BoxContainer/CenterContainer2/piece)
+	if event is InputEventMouseButton \
+		and event.button_index == MOUSE_BUTTON_RIGHT \
+		and event.is_pressed() \
+		and mouseover:
+		cursorpiece.clear_cursor()
 
 func format_money(m):
 	var txt
