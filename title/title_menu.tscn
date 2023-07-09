@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://cw3isycufrwts"]
+[gd_scene load_steps=14 format=3 uid="uid://cw3isycufrwts"]
 
 [ext_resource type="Texture2D" uid="uid://bk4j8e0jdkxw3" path="res://textures/title_text.png" id="1_dlqy0"]
 [ext_resource type="Texture2D" uid="uid://jos6rrqapp8v" path="res://textures/play_text_highlighted.png" id="2_u8dhi"]
 [ext_resource type="Script" path="res://title/play_button.gd" id="3_vp6b5"]
 [ext_resource type="Texture2D" uid="uid://bbenstwr74mfr" path="res://textures/about_text.png" id="4_hfmec"]
+[ext_resource type="AudioStream" uid="uid://73fntxtq5hre" path="res://click.wav" id="4_tlpvi"]
 [ext_resource type="Script" path="res://title/about_button.gd" id="5_34hp0"]
 [ext_resource type="Texture2D" uid="uid://cp6vqkwaumd0s" path="res://textures/quit_text.png" id="6_6myji"]
 [ext_resource type="Script" path="res://title/quit_button.gd" id="7_mcwuw"]
@@ -94,6 +95,9 @@ icon = ExtResource("2_u8dhi")
 flat = true
 script = ExtResource("3_vp6b5")
 
+[node name="click" type="AudioStreamPlayer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions/HBoxContainer/play_button"]
+stream = ExtResource("4_tlpvi")
+
 [node name="HBoxContainer3" type="HBoxContainer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions"]
 layout_mode = 2
 
@@ -118,14 +122,18 @@ borderless = true
 always_on_top = true
 popup_window = true
 theme_override_constants/buttons_separation = 0
-dialog_text = "Created by Alexander Harrison and Roscoe Smith for the Game Maker's Toolkit 2023 Game Jam. This is our first game. Enjoy!
+dialog_text = "Created by Alexander Harrison and Roscoe Smith for the 2023 GMTK Game Jam. This is the first game we have completed together. Enjoy!
 
 Attribution:
 Built with Godot v4.0.3
 Heartbeat sound by .name. freesound.org/people/.name/sounds/418866/
-Heart symbol by Fibonacci. wikipedia.org/wiki/Heart_symbol#/media/File:Heart_corazón.svg
-Font is Play by Jonas Hecksher. fonts.google.com/specimen/Play/about"
+Font is Play by Jonas Hecksher. fonts.google.com/specimen/Play/about
+
+Otherwise, all assets were built by ourselves during the jam."
 dialog_autowrap = true
+
+[node name="click" type="AudioStreamPlayer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions/HBoxContainer3/about_button"]
+stream = ExtResource("4_tlpvi")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions"]
 layout_mode = 2
@@ -141,6 +149,9 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_kfi35")
 icon = ExtResource("6_6myji")
 flat = true
 script = ExtResource("7_mcwuw")
+
+[node name="click" type="AudioStreamPlayer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions/HBoxContainer2/quit_button"]
+stream = ExtResource("4_tlpvi")
 
 [node name="MarginContainer" type="MarginContainer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2

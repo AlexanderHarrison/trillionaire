@@ -14,7 +14,7 @@ const months = [
 
 func _ready():
 	$line2.text = "You have done it! On %s, %s %d, %d, you have become the world's first ethical trillionaire." \
-		% [days[(Stats.g_date-1) % 5], months[Stats.g_month], Stats.g_date, Stats.g_year]
+		% [days[(Stats.g_date) % 5], months[Stats.g_month], Stats.g_date+1, Stats.g_year]
 
 func _process(delta):
 	timer += delta
@@ -47,5 +47,6 @@ func _on_control_gui_input(event):
 		and event.button_index == MOUSE_BUTTON_LEFT \
 		and event.is_pressed():
 		timer += 10;
+		$click.play()
 		if state > 6:
 			get_tree().change_scene_to_file("res://title/title_menu.tscn")

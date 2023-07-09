@@ -1,8 +1,9 @@
-[gd_scene load_steps=41 format=3 uid="uid://us83sgl3nmvk"]
+[gd_scene load_steps=43 format=3 uid="uid://us83sgl3nmvk"]
 
 [ext_resource type="Script" path="res://anim.gd" id="1_a202g"]
 [ext_resource type="Texture2D" uid="uid://pdu2uxc5xx77" path="res://textures/piece_images/1_fg.png" id="2_blsfp"]
 [ext_resource type="Texture2D" uid="uid://cu32mwqato3u7" path="res://textures/piece_images/1_bg.png" id="3_s12bn"]
+[ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="4_10luk"]
 [ext_resource type="Texture2D" uid="uid://ce3q5rhovra33" path="res://textures/piece_images/2_fg.png" id="4_vcjqr"]
 [ext_resource type="Texture2D" uid="uid://c80gpgjpbygoi" path="res://textures/piece_images/2_bg.png" id="5_0okay"]
 [ext_resource type="Texture2D" uid="uid://chd36bkvxqort" path="res://textures/piece_images/3_fg.png" id="6_g722v"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cffsejm5c871d" path="res://textures/piece_images/4_bg.png" id="9_ke40l"]
 [ext_resource type="Texture2D" uid="uid://dprd5dw5of5on" path="res://textures/piece_images/5_fg.png" id="10_ejwki"]
 [ext_resource type="Texture2D" uid="uid://dnbw1ukx1gxie" path="res://textures/piece_images/6_fg.png" id="11_13bn5"]
+[ext_resource type="Texture2D" uid="uid://b4ee8c77scssa" path="res://textures/piece_images/5_bg.png" id="11_wt0v6"]
 [ext_resource type="Texture2D" uid="uid://b5jrwtsh07mac" path="res://textures/piece_images/6_bg.png" id="12_0rjq1"]
 [ext_resource type="Texture2D" uid="uid://c5dp4pba1ytg3" path="res://textures/piece_images/7_fg.png" id="13_wcdn4"]
 [ext_resource type="Texture2D" uid="uid://bw67bs2wv0e8" path="res://textures/piece_images/7_bg.png" id="14_wcgn7"]
@@ -45,6 +47,7 @@
 script = ExtResource("1_a202g")
 
 [node name="1" type="Node2D" parent="."]
+visible = false
 
 [node name="fg" type="Sprite2D" parent="1"]
 z_index = 1
@@ -53,6 +56,18 @@ texture = ExtResource("2_blsfp")
 
 [node name="bg" type="Sprite2D" parent="1"]
 texture = ExtResource("3_s12bn")
+
+[node name="lbl" type="Label" parent="1"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Built a well in Africa!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="2" type="Node2D" parent="."]
 visible = false
@@ -65,6 +80,18 @@ texture = ExtResource("4_vcjqr")
 [node name="bg" type="Sprite2D" parent="2"]
 texture = ExtResource("5_0okay")
 
+[node name="lbl" type="Label" parent="2"]
+offset_left = -196.0
+offset_top = -271.0
+offset_right = 196.0
+offset_bottom = -212.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Donated to homeless charity!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="3" type="Node2D" parent="."]
 visible = false
 
@@ -75,6 +102,18 @@ texture = ExtResource("6_g722v")
 
 [node name="bg" type="Sprite2D" parent="3"]
 texture = ExtResource("7_mxt71")
+
+[node name="lbl" type="Label" parent="3"]
+offset_left = -170.0
+offset_top = -276.0
+offset_right = 172.0
+offset_bottom = -217.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Paid for child's education!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="4" type="Node2D" parent="."]
 visible = false
@@ -87,6 +126,18 @@ texture = ExtResource("8_br7b5")
 [node name="bg" type="Sprite2D" parent="4"]
 texture = ExtResource("9_ke40l")
 
+[node name="lbl" type="Label" parent="4"]
+offset_left = -219.0
+offset_top = -274.0
+offset_right = 214.0
+offset_bottom = -215.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Built bridge over troubled water!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="5" type="Node2D" parent="."]
 visible = false
 
@@ -96,7 +147,19 @@ scale = Vector2(0.789963, 0.698171)
 texture = ExtResource("10_ejwki")
 
 [node name="bg" type="Sprite2D" parent="5"]
-texture = ExtResource("10_ejwki")
+texture = ExtResource("11_wt0v6")
+
+[node name="lbl" type="Label" parent="5"]
+offset_left = -140.0
+offset_top = -278.0
+offset_right = 148.0
+offset_bottom = -219.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Sponsored child!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="6" type="Node2D" parent="."]
 visible = false
@@ -109,6 +172,18 @@ texture = ExtResource("11_13bn5")
 [node name="bg" type="Sprite2D" parent="6"]
 texture = ExtResource("12_0rjq1")
 
+[node name="lbl" type="Label" parent="6"]
+offset_left = -160.0
+offset_top = -273.0
+offset_right = 151.0
+offset_bottom = -214.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Tipped waiter 10000%!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="7" type="Node2D" parent="."]
 visible = false
 
@@ -119,6 +194,18 @@ texture = ExtResource("13_wcdn4")
 
 [node name="bg" type="Sprite2D" parent="7"]
 texture = ExtResource("14_wcgn7")
+
+[node name="lbl" type="Label" parent="7"]
+offset_left = -158.0
+offset_top = -271.0
+offset_right = 153.0
+offset_bottom = -212.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Helped Nigerian prince!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="8" type="Node2D" parent="."]
 visible = false
@@ -131,6 +218,18 @@ texture = ExtResource("15_pry5o")
 [node name="bg" type="Sprite2D" parent="8"]
 texture = ExtResource("16_mdkmr")
 
+[node name="lbl" type="Label" parent="8"]
+offset_left = -221.0
+offset_top = -275.0
+offset_right = 201.0
+offset_bottom = -216.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Bought Tampa Bay Buccaneers!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="9" type="Node2D" parent="."]
 visible = false
 
@@ -141,6 +240,18 @@ texture = ExtResource("17_1ucqt")
 
 [node name="bg" type="Sprite2D" parent="9"]
 texture = ExtResource("18_mu5i5")
+
+[node name="lbl" type="Label" parent="9"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Paid for neurosurgury!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="10" type="Node2D" parent="."]
 visible = false
@@ -153,6 +264,18 @@ texture = ExtResource("19_ym58e")
 [node name="bg" type="Sprite2D" parent="10"]
 texture = ExtResource("20_3dy2k")
 
+[node name="lbl" type="Label" parent="10"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Buried treasure!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="11" type="Node2D" parent="."]
 visible = false
 
@@ -163,6 +286,18 @@ texture = ExtResource("21_5fl7j")
 
 [node name="bg" type="Sprite2D" parent="11"]
 texture = ExtResource("22_y0ely")
+
+[node name="lbl" type="Label" parent="11"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Hodled Dogecoin!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="12" type="Node2D" parent="."]
 visible = false
@@ -175,6 +310,18 @@ texture = ExtResource("23_4d4kp")
 [node name="bg" type="Sprite2D" parent="12"]
 texture = ExtResource("24_0vdls")
 
+[node name="lbl" type="Label" parent="12"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Bought yacht fleet!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="13" type="Node2D" parent="."]
 visible = false
 
@@ -185,6 +332,18 @@ texture = ExtResource("25_gnblb")
 
 [node name="bg" type="Sprite2D" parent="13"]
 texture = ExtResource("26_48mh8")
+
+[node name="lbl" type="Label" parent="13"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Built a pyramid!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="14" type="Node2D" parent="."]
 visible = false
@@ -197,6 +356,18 @@ texture = ExtResource("27_acira")
 [node name="bg" type="Sprite2D" parent="14"]
 texture = ExtResource("28_ouo7e")
 
+[node name="lbl" type="Label" parent="14"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Became Batman!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="15" type="Node2D" parent="."]
 visible = false
 
@@ -207,6 +378,18 @@ texture = ExtResource("29_vfic8")
 
 [node name="bg" type="Sprite2D" parent="15"]
 texture = ExtResource("30_mer3n")
+
+[node name="lbl" type="Label" parent="15"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Bought organs!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="16" type="Node2D" parent="."]
 visible = false
@@ -219,6 +402,18 @@ texture = ExtResource("31_rlhed")
 [node name="bg" type="Sprite2D" parent="16"]
 texture = ExtResource("32_pxbam")
 
+[node name="lbl" type="Label" parent="16"]
+offset_left = -229.0
+offset_top = -273.0
+offset_right = 223.0
+offset_bottom = -214.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Ordered pizza for all of New York!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="17" type="Node2D" parent="."]
 visible = false
 
@@ -229,6 +424,18 @@ texture = ExtResource("33_nf8bj")
 
 [node name="bg" type="Sprite2D" parent="17"]
 texture = ExtResource("34_lqhov")
+
+[node name="lbl" type="Label" parent="17"]
+offset_left = -178.0
+offset_top = -270.0
+offset_right = 163.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Reconstructed dinosaurs!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="18" type="Node2D" parent="."]
 visible = false
@@ -241,6 +448,18 @@ texture = ExtResource("35_403do")
 [node name="bg" type="Sprite2D" parent="18"]
 texture = ExtResource("36_nhte2")
 
+[node name="lbl" type="Label" parent="18"]
+offset_left = -166.0
+offset_top = -271.0
+offset_right = 162.0
+offset_bottom = -212.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Launched golden rocket!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="19" type="Node2D" parent="."]
 visible = false
 
@@ -252,6 +471,18 @@ texture = ExtResource("37_fnhm5")
 [node name="bg" type="Sprite2D" parent="19"]
 texture = ExtResource("38_5dc1l")
 
+[node name="lbl" type="Label" parent="19"]
+offset_left = -150.0
+offset_top = -270.0
+offset_right = 138.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Terraformed Venus!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="20" type="Node2D" parent="."]
 visible = false
 
@@ -262,3 +493,15 @@ texture = ExtResource("39_dry7k")
 
 [node name="bg" type="Sprite2D" parent="20"]
 texture = ExtResource("40_jiq8l")
+
+[node name="lbl" type="Label" parent="20"]
+offset_left = -222.0
+offset_top = -269.0
+offset_right = 208.0
+offset_bottom = -210.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("4_10luk")
+theme_override_font_sizes/font_size = 30
+text = "Bought a social media company!"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ti4f0ml24f20"]
+[gd_scene load_steps=8 format=3 uid="uid://ti4f0ml24f20"]
 
 [ext_resource type="Script" path="res://preview/cont.gd" id="1_j5b8u"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="1_n7hxt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ccffom1sh7w4w" path="res://heart.png" id="4_wdt1y"]
 [ext_resource type="Script" path="res://preview/heart.gd" id="5_kd2o0"]
 [ext_resource type="AudioStream" uid="uid://djv0ggbwcumq0" path="res://preview/heartbeat.mp3" id="6_0cpsx"]
+[ext_resource type="AudioStream" uid="uid://73fntxtq5hre" path="res://click.wav" id="7_ff54e"]
 
 [node name="preview" type="Node2D"]
 
@@ -127,5 +128,8 @@ text = "You will now fill your schedule with activities to give back your fortun
 vertical_alignment = 1
 autowrap_mode = 3
 script = ExtResource("3_je6j7")
+
+[node name="click" type="AudioStreamPlayer" parent="cont"]
+stream = ExtResource("7_ff54e")
 
 [connection signal="gui_input" from="Control" to="cont" method="_on_control_gui_input"]

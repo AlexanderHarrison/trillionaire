@@ -7,6 +7,6 @@ var calls = [
 	0, 0, 0, 0, 0
 ]
 
-var g_date
-var g_month
-var g_year
+var g_date = 1
+var g_month = 0
+var g_year = 0

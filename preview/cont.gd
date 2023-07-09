@@ -41,3 +41,4 @@ func _on_control_gui_input(event):
 		and event.button_index == MOUSE_BUTTON_LEFT \
 		and event.is_pressed():
 		timer += 10;
+		$click.play()

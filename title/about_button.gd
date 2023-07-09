@@ -10,6 +10,7 @@ func _button_pressed():
 	$about_text.visible = true
 
 func _on_mouse_entered():
+	$click.play()
 	icon = icon_n
 	get_parent().get_node("MarginContainer").visible = true
 

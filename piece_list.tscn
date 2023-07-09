@@ -97,7 +97,7 @@ piece_name = "Buy black market
 organs"
 arr = Array[bool]([true, false, false, false, true, true, true, false, false, false, false, true])
 width = 4
-color = Color(0.6, 0.8, 0.6, 1)
+color = Color(0.976471, 0.568627, 0.341176, 1)
 money_loss = 250000000
 required_loss = 750000000
 idx = 14

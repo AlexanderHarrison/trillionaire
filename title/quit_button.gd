@@ -13,6 +13,7 @@ func _button_pressed():
 
 
 func _on_mouse_entered():
+	$click.play()
 	icon = icon_n
 	get_parent().get_node("MarginContainer").visible = true
 

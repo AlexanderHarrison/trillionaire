@@ -2,6 +2,8 @@ extends Node2D
 
 var fg
 var bg
+var lbl
+var lbl_pos
 var cur
 
 var showing
@@ -21,6 +23,8 @@ func start_anim(idx):
 	cur.visible = true
 	fg = cur.get_node("fg")
 	bg = cur.get_node("bg")
+	lbl = cur.get_node("lbl")
+	lbl_pos = lbl.position
 	showing = true
 
 func _process(delta):
@@ -37,12 +41,15 @@ func _process(delta):
 		bg.scale = Vector2(1.0, 1.0) + Vector2(0.05, 0.05) * (1-t)
 		fg.modulate.a = alpha
 		bg.modulate.a = alpha
+		lbl.modulate.a = alpha
+		lbl.position = lbl_pos + Vector2(0.0, 10*t)
 		
 		if timer > show_time:
 			clear()
 
 func clear():
 	if cur != null:
+		lbl.position = lbl_pos
 		cur.visible = false
 	timer = 0
 	showing = false
