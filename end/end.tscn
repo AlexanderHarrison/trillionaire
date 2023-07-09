@@ -1,0 +1,225 @@
+[gd_scene load_steps=8 format=3 uid="uid://1behn4cyxtb3"]
+
+[ext_resource type="Script" path="res://end/cont2.gd" id="1_egome"]
+[ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="2_0v8y0"]
+[ext_resource type="Script" path="res://preview/line.gd" id="3_vbdho"]
+[ext_resource type="Texture2D" uid="uid://ccffom1sh7w4w" path="res://heart.png" id="4_2y322"]
+[ext_resource type="Script" path="res://preview/heart.gd" id="5_53h5f"]
+[ext_resource type="AudioStream" uid="uid://djv0ggbwcumq0" path="res://preview/heartbeat.mp3" id="6_1jbtc"]
+[ext_resource type="Script" path="res://end/stat_show.gd" id="7_d083o"]
+
+[node name="end" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1978.0
+offset_bottom = 1124.0
+
+[node name="cont" type="VBoxContainer" parent="."]
+offset_left = 435.0
+offset_right = 1462.0
+offset_bottom = 1079.0
+mouse_filter = 2
+script = ExtResource("1_egome")
+
+[node name="m0" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line1" type="Label" parent="cont"]
+texture_filter = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0v8y0")
+theme_override_font_sizes/font_size = 100
+text = "$0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_vbdho")
+
+[node name="m1" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line2" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0v8y0")
+theme_override_font_sizes/font_size = 30
+text = "You have done it! After donating your entire net worth you have become the world's first ethical trillionaire."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_vbdho")
+
+[node name="m2" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line3" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0v8y0")
+theme_override_font_sizes/font_size = 30
+text = "No longer does the weight of your ill-gotten goods fall on your shoulder."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_vbdho")
+
+[node name="m3" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="heart" type="Sprite2D" parent="cont"]
+position = Vector2(522, 504)
+scale = Vector2(0.70144, 0.635034)
+texture = ExtResource("4_2y322")
+script = ExtResource("5_53h5f")
+
+[node name="beat" type="AudioStreamPlayer" parent="cont/heart"]
+stream = ExtResource("6_1jbtc")
+volume_db = -1.09
+
+[node name="line4" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0v8y0")
+theme_override_font_sizes/font_size = 30
+text = "Congratulations!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_vbdho")
+
+[node name="m4" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="stats" type="GridContainer" parent="cont"]
+layout_mode = 2
+columns = 3
+script = ExtResource("7_d083o")
+
+[node name="l1" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "African wells built"
+script = ExtResource("3_vbdho")
+
+[node name="l2" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "donations to homeless shelters"
+script = ExtResource("3_vbdho")
+
+[node name="l3" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "childrens' educations payed for"
+script = ExtResource("3_vbdho")
+
+[node name="l4" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "bridges built over troubled water"
+script = ExtResource("3_vbdho")
+
+[node name="l5" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "1 a done"
+script = ExtResource("3_vbdho")
+
+[node name="l6" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l7" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l8" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l9" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "1 a done"
+script = ExtResource("3_vbdho")
+
+[node name="l10" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l11" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l12" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l13" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "1 a done"
+script = ExtResource("3_vbdho")
+
+[node name="l14" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l15" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l16" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l17" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "1 a done"
+script = ExtResource("3_vbdho")
+
+[node name="l18" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l19" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[node name="l20" type="Label" parent="cont/stats"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+text = "asdasdasd"
+script = ExtResource("3_vbdho")
+
+[connection signal="gui_input" from="Control" to="cont" method="_on_control_gui_input"]
