@@ -6,9 +6,7 @@ extends Container
 @export var color: Color;
 @export var money_loss: int;
 @export var required_loss: int;
-@export var research_gain: int;
-@export var is_buy_asset: bool;
-@export var asset_node_name: String;
+@export var idx: int
 
 var mouseover = false;
 var cursorpiece
@@ -21,12 +19,10 @@ func _ready():
 		color, 
 		money_loss, 
 		required_loss,
+		idx
 	)
 	$BoxContainer/CenterContainer/VBoxContainer/name.set_text(piece_name);
-	if money_loss > 0:
-		$BoxContainer/CenterContainer/VBoxContainer/effect.set_text(format_money(-money_loss));
-	else:
-		$BoxContainer/CenterContainer/VBoxContainer/effect.set_text("+%d research" % research_gain);
+	$BoxContainer/CenterContainer/VBoxContainer/effect.set_text(format_money(-money_loss));
 	cursorpiece = get_tree().root.get_child(0).get_node("cursor_piece")
 
 func _on_mouse_entered():

@@ -47,11 +47,13 @@ var hour_nodes = [
 var date
 var money
 var research
+var anim
 
 func _ready():
 	var root = get_tree().root.get_child(0)
 	date = root.get_node("date")
 	money = root.get_node("money")
+	anim = root.get_node("anim")
 	date.call_on_date_update(self)
 	cursorpiece = root.get_node("cursor_piece")
 	research = root.get_node("piece_list/VBoxContainer/research_label")
@@ -68,6 +70,7 @@ func update_date(newdate, _month, _year):
 		var loss = data[y][x][0]
 		money.remove_money(loss)
 		research.check_loss(money.money)
+		anim.start_anim(data[y][x][1])
 	
 
 func add_child_hour(hour):
@@ -124,13 +127,14 @@ func add_arrangement(idx, piece):
 	var p_width = arrangement[0].size()
 	
 	arrangements.append(arrangement)
+	print(piece.idx)
 	for y in p_height:
 		for x in p_width:
 			if arrangement[y][x]:
 				$click_player.play()
 				calendar[here_y+y][here_x+x] = true
 				pieces[here_y+y][here_x+x] = piece_idx
-				data[here_y+y][here_x+x] = [piece.money_loss, piece.research_gain]
+				data[here_y+y][here_x+x] = [piece.money_loss, piece.idx]
 				var node = hour_nodes[here_y+y][here_x+x]
 			
 				var g_d = y < p_height-1 and arrangement[y+1][x]

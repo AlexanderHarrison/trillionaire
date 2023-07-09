@@ -9,7 +9,6 @@ func remove_money(loss):
 	if quit_next:
 		get_tree().change_scene_to_file("res://end/end.tscn")
 		
-	var prev = money
 	money -= loss
 	if money < 0:
 		money = 0

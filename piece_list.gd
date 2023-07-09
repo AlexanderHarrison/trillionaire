@@ -26,4 +26,6 @@ func next_piece_loss(money):
 				child.visible = true
 	if new:
 		$new_piece.play()
+	else:
+		$good_day.play()
 	return min_loss

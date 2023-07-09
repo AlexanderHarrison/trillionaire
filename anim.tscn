@@ -1,0 +1,264 @@
+[gd_scene load_steps=41 format=3 uid="uid://us83sgl3nmvk"]
+
+[ext_resource type="Script" path="res://anim.gd" id="1_a202g"]
+[ext_resource type="Texture2D" uid="uid://pdu2uxc5xx77" path="res://textures/piece_images/1_fg.png" id="2_blsfp"]
+[ext_resource type="Texture2D" uid="uid://cu32mwqato3u7" path="res://textures/piece_images/1_bg.png" id="3_s12bn"]
+[ext_resource type="Texture2D" uid="uid://ce3q5rhovra33" path="res://textures/piece_images/2_fg.png" id="4_vcjqr"]
+[ext_resource type="Texture2D" uid="uid://c80gpgjpbygoi" path="res://textures/piece_images/2_bg.png" id="5_0okay"]
+[ext_resource type="Texture2D" uid="uid://chd36bkvxqort" path="res://textures/piece_images/3_fg.png" id="6_g722v"]
+[ext_resource type="Texture2D" uid="uid://gpk8r5hiy8ot" path="res://textures/piece_images/3_bg.png" id="7_mxt71"]
+[ext_resource type="Texture2D" uid="uid://c1d853qrpvvis" path="res://textures/piece_images/4_fg.png" id="8_br7b5"]
+[ext_resource type="Texture2D" uid="uid://cffsejm5c871d" path="res://textures/piece_images/4_bg.png" id="9_ke40l"]
+[ext_resource type="Texture2D" uid="uid://dprd5dw5of5on" path="res://textures/piece_images/5_fg.png" id="10_ejwki"]
+[ext_resource type="Texture2D" uid="uid://dnbw1ukx1gxie" path="res://textures/piece_images/6_fg.png" id="11_13bn5"]
+[ext_resource type="Texture2D" uid="uid://b5jrwtsh07mac" path="res://textures/piece_images/6_bg.png" id="12_0rjq1"]
+[ext_resource type="Texture2D" uid="uid://c5dp4pba1ytg3" path="res://textures/piece_images/7_fg.png" id="13_wcdn4"]
+[ext_resource type="Texture2D" uid="uid://bw67bs2wv0e8" path="res://textures/piece_images/7_bg.png" id="14_wcgn7"]
+[ext_resource type="Texture2D" uid="uid://85l6cwkbs7kp" path="res://textures/piece_images/8_fg.png" id="15_pry5o"]
+[ext_resource type="Texture2D" uid="uid://pn05ueglyw81" path="res://textures/piece_images/8_bg.png" id="16_mdkmr"]
+[ext_resource type="Texture2D" uid="uid://bxmqvwey8d4hk" path="res://textures/piece_images/9_fg.png" id="17_1ucqt"]
+[ext_resource type="Texture2D" uid="uid://b3y3apkedyvd4" path="res://textures/piece_images/9_bg.png" id="18_mu5i5"]
+[ext_resource type="Texture2D" uid="uid://y7fpjc14rym1" path="res://textures/piece_images/10_fg.png" id="19_ym58e"]
+[ext_resource type="Texture2D" uid="uid://bkra0cndw62qf" path="res://textures/piece_images/10_bg.png" id="20_3dy2k"]
+[ext_resource type="Texture2D" uid="uid://den1xp54pvyiy" path="res://textures/piece_images/11_fg.png" id="21_5fl7j"]
+[ext_resource type="Texture2D" uid="uid://di2kekyyy6fy1" path="res://textures/piece_images/11_bg.png" id="22_y0ely"]
+[ext_resource type="Texture2D" uid="uid://dx1rys5aie2o8" path="res://textures/piece_images/12_fg.png" id="23_4d4kp"]
+[ext_resource type="Texture2D" uid="uid://cnoihfctrbnxf" path="res://textures/piece_images/12_bg.png" id="24_0vdls"]
+[ext_resource type="Texture2D" uid="uid://btjmtqb82ib8m" path="res://textures/piece_images/13_fg.png" id="25_gnblb"]
+[ext_resource type="Texture2D" uid="uid://dsasdpuahdjw8" path="res://textures/piece_images/13_bg.png" id="26_48mh8"]
+[ext_resource type="Texture2D" uid="uid://ck1y12pxiiot6" path="res://textures/piece_images/14_fg.png" id="27_acira"]
+[ext_resource type="Texture2D" uid="uid://jmbyeepgrqw2" path="res://textures/piece_images/14_bg.png" id="28_ouo7e"]
+[ext_resource type="Texture2D" uid="uid://d2k7tu2kllyls" path="res://textures/piece_images/15_fg.png" id="29_vfic8"]
+[ext_resource type="Texture2D" uid="uid://b8bdpr1w26gns" path="res://textures/piece_images/15_bg.png" id="30_mer3n"]
+[ext_resource type="Texture2D" uid="uid://bw7n7a8ixhoq1" path="res://textures/piece_images/16_fg.png" id="31_rlhed"]
+[ext_resource type="Texture2D" uid="uid://cyymrltnsc18o" path="res://textures/piece_images/16_bg.png" id="32_pxbam"]
+[ext_resource type="Texture2D" uid="uid://g5yk3nj4dduf" path="res://textures/piece_images/17_fg.png" id="33_nf8bj"]
+[ext_resource type="Texture2D" uid="uid://dam5fx1w5gnan" path="res://textures/piece_images/17_bg.png" id="34_lqhov"]
+[ext_resource type="Texture2D" uid="uid://dgdhl8np6t83a" path="res://textures/piece_images/18_fg.png" id="35_403do"]
+[ext_resource type="Texture2D" uid="uid://tjdw1lddohy1" path="res://textures/piece_images/18_bg.png" id="36_nhte2"]
+[ext_resource type="Texture2D" uid="uid://b4a3iaa8ksvue" path="res://textures/piece_images/19_fg.png" id="37_fnhm5"]
+[ext_resource type="Texture2D" uid="uid://tfs2vk4e8w36" path="res://textures/piece_images/19_bg.png" id="38_5dc1l"]
+[ext_resource type="Texture2D" uid="uid://dsjfget54jmx1" path="res://textures/piece_images/20_fg.png" id="39_dry7k"]
+[ext_resource type="Texture2D" uid="uid://cclsj2asiraml" path="res://textures/piece_images/20_bg.png" id="40_jiq8l"]
+
+[node name="anim" type="Node2D"]
+script = ExtResource("1_a202g")
+
+[node name="1" type="Node2D" parent="."]
+
+[node name="fg" type="Sprite2D" parent="1"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("2_blsfp")
+
+[node name="bg" type="Sprite2D" parent="1"]
+texture = ExtResource("3_s12bn")
+
+[node name="2" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="2"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("4_vcjqr")
+
+[node name="bg" type="Sprite2D" parent="2"]
+texture = ExtResource("5_0okay")
+
+[node name="3" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="3"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("6_g722v")
+
+[node name="bg" type="Sprite2D" parent="3"]
+texture = ExtResource("7_mxt71")
+
+[node name="4" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="4"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("8_br7b5")
+
+[node name="bg" type="Sprite2D" parent="4"]
+texture = ExtResource("9_ke40l")
+
+[node name="5" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="5"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("10_ejwki")
+
+[node name="bg" type="Sprite2D" parent="5"]
+texture = ExtResource("10_ejwki")
+
+[node name="6" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="6"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("11_13bn5")
+
+[node name="bg" type="Sprite2D" parent="6"]
+texture = ExtResource("12_0rjq1")
+
+[node name="7" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="7"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("13_wcdn4")
+
+[node name="bg" type="Sprite2D" parent="7"]
+texture = ExtResource("14_wcgn7")
+
+[node name="8" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="8"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("15_pry5o")
+
+[node name="bg" type="Sprite2D" parent="8"]
+texture = ExtResource("16_mdkmr")
+
+[node name="9" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="9"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("17_1ucqt")
+
+[node name="bg" type="Sprite2D" parent="9"]
+texture = ExtResource("18_mu5i5")
+
+[node name="10" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="10"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("19_ym58e")
+
+[node name="bg" type="Sprite2D" parent="10"]
+texture = ExtResource("20_3dy2k")
+
+[node name="11" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="11"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("21_5fl7j")
+
+[node name="bg" type="Sprite2D" parent="11"]
+texture = ExtResource("22_y0ely")
+
+[node name="12" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="12"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("23_4d4kp")
+
+[node name="bg" type="Sprite2D" parent="12"]
+texture = ExtResource("24_0vdls")
+
+[node name="13" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="13"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("25_gnblb")
+
+[node name="bg" type="Sprite2D" parent="13"]
+texture = ExtResource("26_48mh8")
+
+[node name="14" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="14"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("27_acira")
+
+[node name="bg" type="Sprite2D" parent="14"]
+texture = ExtResource("28_ouo7e")
+
+[node name="15" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="15"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("29_vfic8")
+
+[node name="bg" type="Sprite2D" parent="15"]
+texture = ExtResource("30_mer3n")
+
+[node name="16" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="16"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("31_rlhed")
+
+[node name="bg" type="Sprite2D" parent="16"]
+texture = ExtResource("32_pxbam")
+
+[node name="17" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="17"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("33_nf8bj")
+
+[node name="bg" type="Sprite2D" parent="17"]
+texture = ExtResource("34_lqhov")
+
+[node name="18" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="18"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("35_403do")
+
+[node name="bg" type="Sprite2D" parent="18"]
+texture = ExtResource("36_nhte2")
+
+[node name="19" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="19"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("37_fnhm5")
+
+[node name="bg" type="Sprite2D" parent="19"]
+texture = ExtResource("38_5dc1l")
+
+[node name="20" type="Node2D" parent="."]
+visible = false
+
+[node name="fg" type="Sprite2D" parent="20"]
+z_index = 1
+scale = Vector2(0.789963, 0.698171)
+texture = ExtResource("39_dry7k")
+
+[node name="bg" type="Sprite2D" parent="20"]
+texture = ExtResource("40_jiq8l")

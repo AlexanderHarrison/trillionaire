@@ -8,7 +8,7 @@ extends GridContainer
 @export var research_gain: int;
 @export var is_buy_asset: bool;
 @export var asset_node_name: String;
-
+@export var idx: int
 var internal_arr = [];
 
 var hour = preload("res://hour.tscn")
@@ -17,15 +17,15 @@ var free_hour = preload("res://blank_hour.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if width > 0:
-		update_arr(arr, width, color, money_loss, required_loss)
+		update_arr(arr, width, color, money_loss, required_loss, idx)
 
-func update_arr(new_arr, new_width, new_color, new_money_loss, new_required_loss):
-		
+func update_arr(new_arr, new_width, new_color, new_money_loss, new_required_loss, new_idx):
 	arr = new_arr
 	width = new_width
 	color = new_color
 	money_loss = new_money_loss
 	required_loss = new_required_loss
+	idx = new_idx
 	internal_arr = []
 	for n in get_children():
 		remove_child(n)
