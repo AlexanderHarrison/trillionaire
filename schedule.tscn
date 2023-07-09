@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7ydvhu6dysqm"]
+[gd_scene load_steps=5 format=3 uid="uid://b7ydvhu6dysqm"]
 
 [ext_resource type="Script" path="res://schedule.gd" id="1_5jjap"]
 [ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="1_6qadv"]
 [ext_resource type="PackedScene" uid="uid://b6eno0c6fhadl" path="res://free_hour.tscn" id="1_u2jjd"]
+[ext_resource type="AudioStream" uid="uid://73fntxtq5hre" path="res://click.wav" id="4_0ehiu"]
 
 [node name="VBoxContainer" type="VBoxContainer"]
 offset_top = 384.0
@@ -183,3 +184,6 @@ idx = 28
 [node name="free30" parent="schedule" instance=ExtResource("1_u2jjd")]
 layout_mode = 2
 idx = 29
+
+[node name="click_player" type="AudioStreamPlayer" parent="schedule"]
+stream = ExtResource("4_0ehiu")

@@ -126,6 +126,7 @@ func add_arrangement(idx, piece):
 	for y in p_height:
 		for x in p_width:
 			if arrangement[y][x]:
+				$click_player.play()
 				calendar[here_y+y][here_x+x] = true
 				pieces[here_y+y][here_x+x] = piece_idx
 				data[here_y+y][here_x+x] = [piece.money_loss, piece.research_gain]
