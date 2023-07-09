@@ -5,7 +5,7 @@ extends Container
 @export var width: int;
 @export var color: Color;
 @export var money_loss: int;
-@export var research_level: int;
+@export var required_loss: int;
 @export var research_gain: int;
 @export var is_buy_asset: bool;
 @export var asset_node_name: String;
@@ -20,10 +20,7 @@ func _ready():
 		width, 
 		color, 
 		money_loss, 
-		research_level,
-		research_gain,
-		is_buy_asset,
-		asset_node_name
+		required_loss,
 	)
 	$BoxContainer/CenterContainer/VBoxContainer/name.set_text(piece_name);
 	if money_loss > 0:

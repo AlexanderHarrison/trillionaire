@@ -4,12 +4,21 @@ extends ScrollContainer
 @export var objects: Array[Resource]
 
 func _ready():
-	check_research(0)
+	next_piece_loss(1000000000000)
 
-func check_research(new_research):
+func check_research(_a):
+	pass
+	
+func next_piece_loss(money):
+	var loss = 1000000000000 - money
+	var min_loss = 1000000000000
 	for child in $VBoxContainer.get_children():
 		if child.name.begins_with("piece"):
-			if child.research_level > new_research:
+			if child.required_loss > loss:
 				child.visible = false
+				if child.required_loss - loss < min_loss:
+					min_loss = child.required_loss - loss
 			else:
 				child.visible = true
+	print(min_loss)
+	return min_loss

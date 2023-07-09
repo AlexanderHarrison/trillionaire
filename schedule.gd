@@ -67,9 +67,7 @@ func update_date(newdate, _month, _year):
 	if calendar[y][x]:
 		var loss = data[y][x][0]
 		money.remove_money(loss)
-		var res = data[y][x][1]
-		if res > 0:
-			research.add_research(res)
+		research.check_loss(money.money)
 	
 
 func add_child_hour(hour):

@@ -15,8 +15,7 @@ func has_cursor():
 func start_cursor(temp_p):
 	piece = piece_node.instantiate()
 	piece.update_arr(temp_p.arr, temp_p.width, temp_p.color, 
-		temp_p.money_loss, temp_p.required_level, temp_p.research_gain,
-		temp_p.is_buy_asset, temp_p.asset_node_name)
+		temp_p.money_loss, temp_p.required_loss)
 	add_child(piece)
 	visible = true
 

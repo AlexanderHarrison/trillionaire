@@ -118,7 +118,12 @@ borderless = true
 always_on_top = true
 popup_window = true
 theme_override_constants/buttons_separation = 0
-dialog_text = "Created by Alexander Harrison and Roscoe Smith for the Game Maker's Toolkit 2023 Game Jam."
+dialog_text = "Created by Alexander Harrison and Roscoe Smith for the Game Maker's Toolkit 2023 Game Jam.
+
+Attrribution:
+Built with Godot v4.0.3
+Heartbeat sound by .name. freesound.org/people/.name/sounds/418866/
+Heart symbol by Fibonacci. wikipedia.org/wiki/Heart_symbol#/media/File:Heart_corazón.svg"
 dialog_autowrap = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="title_menu/HBoxContainer/VBoxContainer/HBoxContainer/MenuOptions"]
