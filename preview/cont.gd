@@ -33,7 +33,7 @@ func next():
 		8:
 			$line7.start()
 		9:
-			get_tree().change_scene_to_file("res://root.tscn")
+			get_tree().change_scene_to_file("res://tutorial.tscn")
 
 
 func _on_control_gui_input(event):
