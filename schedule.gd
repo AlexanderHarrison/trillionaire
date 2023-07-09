@@ -88,6 +88,7 @@ func box_click_r(idx):
 	var x = idx % width
 	var y = floori(idx as float / width)
 	if calendar[y][x]:
+		$pickup_player.play()
 		var piece = pieces[y][x]
 		for cy in height:
 			for cx in width:
