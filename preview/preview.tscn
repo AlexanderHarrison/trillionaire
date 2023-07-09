@@ -71,7 +71,7 @@ layout_mode = 2
 mouse_filter = 2
 
 [node name="heart" type="Sprite2D" parent="cont"]
-position = Vector2(487, 506)
+position = Vector2(515, 506)
 scale = Vector2(2.21538, 2.21538)
 texture = ExtResource("2_oaalm")
 script = ExtResource("5_kd2o0")

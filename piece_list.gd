@@ -20,5 +20,4 @@ func next_piece_loss(money):
 					min_loss = child.required_loss - loss
 			else:
 				child.visible = true
-	print(min_loss)
 	return min_loss

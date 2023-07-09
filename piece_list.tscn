@@ -86,4 +86,4 @@ layout_mode = 2
 arr = Array[bool]([true, true, true, true])
 width = 1
 color = Color(0.4, 0.6, 0.8, 1)
-money_loss = 1111
+money_loss = 100000000000
