@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=3 uid="uid://ti4f0ml24f20"]
+
+[ext_resource type="Script" path="res://preview/cont.gd" id="1_j5b8u"]
+[ext_resource type="FontFile" uid="uid://43m0hlnlg62x" path="res://Play-Regular.ttf" id="1_n7hxt"]
+[ext_resource type="Texture2D" uid="uid://k2hq0qwdchkw" path="res://preview/heart.svg" id="2_oaalm"]
+[ext_resource type="Script" path="res://preview/line.gd" id="3_je6j7"]
+[ext_resource type="Script" path="res://preview/heart.gd" id="5_kd2o0"]
+[ext_resource type="AudioStream" uid="uid://djv0ggbwcumq0" path="res://preview/heartbeat.mp3" id="6_0cpsx"]
+
+[node name="preview" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1978.0
+offset_bottom = 1124.0
+
+[node name="cont" type="VBoxContainer" parent="."]
+offset_left = 435.0
+offset_right = 1462.0
+offset_bottom = 1079.0
+mouse_filter = 2
+script = ExtResource("1_j5b8u")
+
+[node name="m0" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line1" type="Label" parent="cont"]
+texture_filter = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "It is the year 2030. You have become the world's first trillionaire."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m1" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line2" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "You have made your fortune through crude oil processing, gambling, drug trafficking, social engineering, every and all dirty scheme. Not once did you question the morality of your actions."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m2" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="line3" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "However, after the triumph of becoming a trillionaire wears off, something in you begins to change..."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m3" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="heart" type="Sprite2D" parent="cont"]
+position = Vector2(487, 506)
+scale = Vector2(2.21538, 2.21538)
+texture = ExtResource("2_oaalm")
+script = ExtResource("5_kd2o0")
+
+[node name="beat" type="AudioStreamPlayer" parent="cont/heart"]
+stream = ExtResource("6_0cpsx")
+volume_db = -1.09
+
+[node name="line4" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "In a flash of insight, the pain of the people who you have hurt and killed rushes into you! You are wracked with guilt!"
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m4" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="line5" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "You are struck bedridden with the weight of your remorse. When you at last arise, your final goal becomes to give back to the world you have hurt."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m5" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="line6" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "You must succeed! Or else blood will forever stain your hands!"
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[node name="m6" type="MarginContainer" parent="cont"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="line7" type="Label" parent="cont"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n7hxt")
+theme_override_font_sizes/font_size = 30
+text = "You will now fill your schedule with activities to give back your fortune..."
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_je6j7")
+
+[connection signal="gui_input" from="Control" to="cont" method="_on_control_gui_input"]

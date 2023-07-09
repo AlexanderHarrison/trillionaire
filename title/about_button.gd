@@ -10,7 +10,9 @@ func _button_pressed():
 	$about_text.visible = true
 
 func _on_mouse_entered():
-	icon = icon_h
+	icon = icon_n
+	get_parent().get_node("MarginContainer").visible = true
 
 func _on_mouse_exited():
-	icon = icon_n
+	icon = icon_h
+	get_parent().get_node("MarginContainer").visible = false
